@@ -18,20 +18,29 @@ public class GridCamera : MonoBehaviour
     
     private Camera _cam;
 
-    // Camera layout
+    // Camera grid layout
     private const int NumRows = 3;
     private const int CamsPerRow = 4;
 
     // Camera settings
+    private const float totalFOV = 60.0F;
+    private const float TotalFovRad = Mathf.Deg2Rad * totalFOV;
     private const float IndividualAspectRatio = 1.6F;
-    private const float TotalFovRad = Mathf.Deg2Rad * 60.0F;
 
-    public void Start()
+    private void OnValidate()
+    {
+        if (camIndex < 0)
+            camIndex = 0;
+        if (camIndex > NumRows * CamsPerRow - 1)
+            camIndex = NumRows * CamsPerRow - 1;
+    }
+
+    private void Start()
     {
         _cam = GetComponent<Camera>();
     }
 
-    public void LateUpdate()
+    private void LateUpdate()
     {
         // This could be called once in start for optimization
         _cam.projectionMatrix = GetIndividualProjectionMatrix();
@@ -39,8 +48,6 @@ public class GridCamera : MonoBehaviour
 
     private Matrix4x4 GetIndividualProjectionMatrix()
     {
-        // TODO: This is how it could be set globally
-        //var camIndex = Settings.CameraNumber;
         const int middleRow = NumRows / 2;
         const int middleColumn = CamsPerRow / 2;
         
