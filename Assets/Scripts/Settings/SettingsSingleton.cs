@@ -160,7 +160,7 @@ public class SettingsSingleton : MonoBehaviour
 
     private void GetSetState()
     {
-        // This gets things on start
+        // This gets data on start
         var message = new OSCMessage("live_set/get");
         message.AddValue(OSCValue.String("tempo"));
         channelTransmitter.Send(message);
