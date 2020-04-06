@@ -16,7 +16,7 @@ This is a Unity project made to be used with [respectrable](https://github.com/c
 - Built on Windows and deployed on Nexus 10 tablets
 
 ## To Use
-- Some parts of the project are complicated and specific to the performance
+- Some parts of the project are complicated and specific to the performance (for instance a 16x10 aspect ratio is expected)
 - Load the `main` scene and see where it takes you!
 
 ## Project Structure
