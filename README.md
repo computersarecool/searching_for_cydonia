@@ -16,16 +16,18 @@ This is a Unity project made to be used with [respectrable](https://github.com/c
 - Built on Windows and deployed on Nexus 10 tablets
 
 ## To Use
-- The Unity project should be straight forward
+- Some parts of the project are complicated and specific to the performance
+- Load the `main` scene and see where it takes you!
 
 ## Project Structure
 - The default Unity project structure is used
 
 #### Required Software
-- This project was build on Unity build `2019.1.10f1`
+- This project was built on Unity build `2019.1.10f1`
 
 ### License
 
 :copyright: Willy Nolan 2017
 
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
+
