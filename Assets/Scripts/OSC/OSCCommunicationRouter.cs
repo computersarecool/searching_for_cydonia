@@ -22,6 +22,7 @@ public class OSCCommunicationRouter : MonoBehaviour
     private const string PlayingClipLengthAddress = "/live_set/tracks/*/playing_clip/length";
     private const string PlayingSlotIndexAddress = "/live_set/tracks/*/playing_clip/name";
 
+    #region MonoBehaviors
     public void Start()
     {
         // From Unity
@@ -40,6 +41,37 @@ public class OSCCommunicationRouter : MonoBehaviour
         receiver.Bind(LivePlayingClipPositionAddress, UpdateTrackPosition);
         receiver.Bind(PlayingClipLengthAddress, UpdateClipLength);
         receiver.Bind(PlayingSlotIndexAddress, UpdatePlayingSlotIndex);
+    }
+    #endregion
+
+    // From Unity
+    private static void RotateMainCamera(OSCMessage message)
+    {
+        if (!message.ToVector3(out var vector)) return;
+
+        SettingsSingleton.Instance.UpdateCameraRotation(vector);
+    }
+
+    private static void MoveMainCamera(OSCMessage message)
+    {
+        if (!message.ToVector3(out var vector)) return;
+
+        SettingsSingleton.Instance.MoveMainCameraAndEnvironment(vector);
+    }
+
+    private static void UpdateGuiHue(OSCMessage message)
+    {
+        if (!message.ToFloat(out var value)) return;
+
+        SettingsSingleton.Instance.UpdateGUIHue(value);
+    }
+
+    // From others
+    private static void UpdateTime(OSCMessage message)
+    {
+        if (!message.ToFloat(out var value)) return;
+
+        SettingsSingleton.Instance.clock = value;
     }
 
     // From Live
@@ -114,35 +146,5 @@ public class OSCCommunicationRouter : MonoBehaviour
         var trackIndex = int.Parse(addressArray[trackAddressIndex]);
 
         SettingsSingleton.Instance.UpdatePlayingClipName(trackIndex, name);
-    }
-
-    // From Unity
-    private static void RotateMainCamera(OSCMessage message)
-    {
-        if (!message.ToVector3(out var vector)) return;
-
-        SettingsSingleton.Instance.UpdateCameraRotation(vector);
-    }
-
-    private static void MoveMainCamera(OSCMessage message)
-    {
-        if (!message.ToVector3(out var vector)) return;
-
-        SettingsSingleton.Instance.MoveMainCameraAndEnvironment(vector);
-    }
-
-    private static void UpdateGuiHue(OSCMessage message)
-    {
-        if (!message.ToFloat(out var value)) return;
-
-        SettingsSingleton.Instance.UpdateGUIHue(value);
-    }
-
-    // From others
-    private static void UpdateTime(OSCMessage message)
-    {
-        if (!message.ToFloat(out var value)) return;
-
-        SettingsSingleton.Instance.clock = value;
     }
 }

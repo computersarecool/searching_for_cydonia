@@ -1,13 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class GuiController : MonoBehaviour
+public class GUIController : MonoBehaviour
 {
     public Image objectToFill;
-    public float maxValue;
+    public float _maxValue;
 
     public void FillObject(float value)
     {
-        objectToFill.fillAmount = value / maxValue;
+        objectToFill.fillAmount = value / _maxValue;
     }
 }

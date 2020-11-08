@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Camera))]
-public class FovCalculator : MonoBehaviour {
+public class FOVCalculator : MonoBehaviour {
     private Camera _cam;
     private float _horizontalFov;
     private float _loggedFov;

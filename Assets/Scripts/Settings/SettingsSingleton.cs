@@ -6,7 +6,6 @@ public class SettingsSingleton : MonoBehaviour
 {
     public static SettingsSingleton Instance { get; private set; }
 
-    public int cameraIndex;
     public Camera mainCamera;
     public AudioEqualizer AudioEqualizer;
     public GameObject fixedEnvironment;
@@ -37,7 +36,6 @@ public class SettingsSingleton : MonoBehaviour
             tempoIndicator.text = value.ToString("F0");
         }
     }
-
     public int InterfaceIndex
     {
         get => _interfaceIndex;
@@ -51,13 +49,60 @@ public class SettingsSingleton : MonoBehaviour
         }
     }
 
+    public int cameraIndex
+    {
+        set
+        {
+            this.mainCamera.GetComponent<GridCamera>().camIndex = value;
+            this._cameraIndex = value;
+        }
+    }
+
     private readonly float[] _playingClipsLength = {1.0f, 1.0f, 1.0f, 1.0f};
     private const int CamRotationControlIndex = 2;
     private const int CamMovementControlIndex = 6;
+    private int _cameraIndex;
     private int _interfaceIndex;
     private float _liveSetTempo;
     private Image[] _uiImages;
     private Text[] _uiTexts;
+
+    #region MonoBehaviours
+    private void Awake()
+    {
+        // Delay to get the network ready
+        const int delayForNetwork = 4;
+        Invoke(nameof(GetSetState), delayForNetwork);
+
+        // Collect GUI objects for hue change
+        _uiImages = canvas.GetComponentsInChildren<Image>(true);
+        _uiTexts = canvas.GetComponentsInChildren<Text>(true);
+
+        // Singleton code
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
+    #endregion
+
+    #region Ableton Functions
+    private void GetSetState()
+    {
+        // Get data from live on start
+        var message = new OSCMessage("live_set/get");
+        message.AddValue(OSCValue.String("tempo"));
+        externalOSCTransmitter.Send(message);
+
+        message = new OSCMessage("live_set/view/get");
+        message.AddValue(OSCValue.String("selected_scene_index"));
+        externalOSCTransmitter.Send(message);
+    }
+    #endregion
 
     public void UpdateClipName(int clipIndex, string clipName)
     {
@@ -129,14 +174,8 @@ public class SettingsSingleton : MonoBehaviour
 
     public void UpdateCameraRotation(Vector3 vector)
     {
-        if (cameraIndex != CamRotationControlIndex)
+        if (_cameraIndex != CamRotationControlIndex)
             mainCamera.transform.eulerAngles = vector;
-    }
-
-    public void MoveMainCameraAndEnvironment(Vector3 vector)
-    {
-        if (cameraIndex != CamMovementControlIndex)
-            fixedEnvironment.transform.position = vector;
     }
 
     public void UpdateGUIHue(float newHue)
@@ -164,36 +203,14 @@ public class SettingsSingleton : MonoBehaviour
         }
     }
 
-    private void GetSetState()
+    public void MoveMainCameraAndEnvironment(Vector3 vector)
     {
-        // Get data from live on start
-        var message = new OSCMessage("live_set/get");
-        message.AddValue(OSCValue.String("tempo"));
-        externalOSCTransmitter.Send(message);
-
-        message = new OSCMessage("live_set/view/get");
-        message.AddValue(OSCValue.String("selected_scene_index"));
-        externalOSCTransmitter.Send(message);
+        if (_cameraIndex != CamMovementControlIndex)
+            fixedEnvironment.transform.position = vector;
     }
 
-    private void Awake()
+    public void StoreTrackIndex(int index)
     {
-        // Delay to get the network ready
-        const int delayForNetwork = 4;
-        Invoke(nameof(GetSetState), delayForNetwork);
-
-        // Collect GUI objects for hue change
-        _uiImages = canvas.GetComponentsInChildren<Image>(true);
-        _uiTexts = canvas.GetComponentsInChildren<Text>(true);
-
-        // Singleton code
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-        }
+        Instance.nextTrackToPlayIndex = index + Instance.viewingIndex;
     }
 }

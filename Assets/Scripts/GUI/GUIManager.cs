@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class ConfigurationManager : MonoBehaviour
+public class GUIManager : MonoBehaviour
 {
     public GameObject configurationPanel;
     public GameObject mainPanelsContainer;
@@ -9,5 +10,10 @@ public class ConfigurationManager : MonoBehaviour
     {
         configurationPanel.SetActive(showConfig);
         mainPanelsContainer.SetActive(!showConfig);
+    }
+
+    public void FillObject(float value, float vv)
+    {
+        Debug.Log(value);
     }
 }
