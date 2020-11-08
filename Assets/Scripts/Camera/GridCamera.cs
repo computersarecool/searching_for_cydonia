@@ -1,8 +1,8 @@
-﻿// Set a grid of cameras to share an origin point of view
-// With a 60 degree FOV you have an aspect ratio of 2.1333
+﻿// Create a grid of camera offsets
+// A 60 degree FOV creates an aspect ratio of 2.1333
 // Camera layout is:
 // 0 1 2  3
-// 4 5 6  7  
+// 4 5 6  7
 // 8 9 10 11
 
 using System;
@@ -23,16 +23,13 @@ public class GridCamera : MonoBehaviour
     private const int CamsPerRow = 4;
 
     // Camera settings
-    private const float totalFOV = 60.0F;
-    private const float TotalFovRad = Mathf.Deg2Rad * totalFOV;
+    private const float TotalFOV = 60.0F;
+    private const float TotalFovRad = Mathf.Deg2Rad * TotalFOV;
     private const float IndividualAspectRatio = 1.6F;
 
     private void OnValidate()
     {
-        if (camIndex < 0)
-            camIndex = 0;
-        if (camIndex > NumRows * CamsPerRow - 1)
-            camIndex = NumRows * CamsPerRow - 1;
+        Mathf.Clamp(camIndex, 0, NumRows * CamsPerRow - 1);
     }
 
     private void Start()
@@ -42,7 +39,7 @@ public class GridCamera : MonoBehaviour
 
     private void LateUpdate()
     {
-        // This could be called once in start for optimization
+        // This could be called once on start for optimization
         _cam.projectionMatrix = GetIndividualProjectionMatrix();
     }
 
