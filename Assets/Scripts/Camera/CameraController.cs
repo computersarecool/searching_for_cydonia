@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ViewMover: MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class CameraController: MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public bool forwardMovement;
     
@@ -46,6 +46,19 @@ public class ViewMover: MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         message.AddValue(OSCValue.Float(newPosition.x));
         message.AddValue(OSCValue.Float(newPosition.y));
         message.AddValue(OSCValue.Float(newPosition.z));
+        SettingsSingleton.Instance.unityOSCTransmitter.Send(message);
+    }
+
+    public void RotateView(Vector2 rotationAmount)
+    {
+        var vector = new Vector3(rotationAmount.y, -rotationAmount.x, 0);
+        SettingsSingleton.Instance.mainCamera.transform.eulerAngles = vector;
+
+        var message = new OSCMessage($"{OSCCommunicationRouter.CameraRotateAddress}");
+        message.AddValue(OSCValue.Float(vector.x));
+        message.AddValue(OSCValue.Float(vector.y));
+        message.AddValue(OSCValue.Float(vector.z));
+
         SettingsSingleton.Instance.unityOSCTransmitter.Send(message);
     }
 

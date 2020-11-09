@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class ShowObjHideOthers : MonoBehaviour
+public class ObjectHider : MonoBehaviour
 {
     public GameObject objectToShow;
     public GameObject[] objectsToHide;

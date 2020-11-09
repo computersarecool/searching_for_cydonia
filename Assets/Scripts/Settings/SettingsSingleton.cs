@@ -213,4 +213,14 @@ public class SettingsSingleton : MonoBehaviour
     {
         Instance.nextTrackToPlayIndex = index + Instance.viewingIndex;
     }
+
+    public void SelectInterface(int index)
+    {
+        Instance.InterfaceIndex = index;
+    }
+
+    public void SelectCamera(int index)
+    {
+        Instance.cameraIndex = index;
+    }
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class GUIController : MonoBehaviour
+public class GUIFiller : MonoBehaviour
 {
     public Image objectToFill;
     public float _maxValue;

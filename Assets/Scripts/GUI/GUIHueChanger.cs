@@ -1,7 +1,7 @@
 ﻿using extOSC;
 using UnityEngine;
 
-public class ChangeGuiHue : MonoBehaviour
+public class GUIHueChanger : MonoBehaviour
 {
     public void ChangeHue(float val)
     {
