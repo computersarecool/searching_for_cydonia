@@ -8,7 +8,7 @@ public class SettingsSingleton : MonoBehaviour
 
     public Camera MainCamera;
     public AudioEqualizer AudioEqualizer;
-    public GameObject FixedEnvironment;
+    public GameObject AttachedEnvironment;
 
     [Header("Communication")]
     public OSCTransmitter ExternalOSCTransmitter;
@@ -207,7 +207,7 @@ public class SettingsSingleton : MonoBehaviour
     public void MoveMainCameraAndEnvironment(Vector3 vector)
     {
         if (this.cameraIndex != camMovementControlIndex)
-            this.FixedEnvironment.transform.position = vector;
+            this.AttachedEnvironment.transform.position = vector;
     }
 
     public void StoreTrackIndex(int index)

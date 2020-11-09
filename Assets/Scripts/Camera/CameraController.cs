@@ -30,10 +30,10 @@ public class CameraController: MonoBehaviour, IPointerDownHandler, IPointerUpHan
     private static void Move(bool goForward)
     {
         var newPosition = goForward
-            ? SettingsSingleton.Instance.FixedEnvironment.transform.position + moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward
-            : SettingsSingleton.Instance.FixedEnvironment.transform.position - moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward;
+            ? SettingsSingleton.Instance.AttachedEnvironment.transform.position + moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward
+            : SettingsSingleton.Instance.AttachedEnvironment.transform.position - moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward;
 
-        SettingsSingleton.Instance.FixedEnvironment.transform.position = newPosition;
+        SettingsSingleton.Instance.AttachedEnvironment.transform.position = newPosition;
 
        
         var message = new OSCMessage($"{OSCCommunicationRouter.CameraMoveAddress}");

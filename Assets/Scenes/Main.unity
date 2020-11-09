@@ -694,14 +694,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c2f80bd25f668408d8dd0d6c3a9a93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scale: 20
-  cubes:
-  - {fileID: 185299454}
-  - {fileID: 461202574}
-  - {fileID: 157761105}
-  - {fileID: 2023657195}
-  - {fileID: 693283481}
-  - {fileID: 727838842}
+  Scale: 0
+  Cubes: []
 --- !u!1 &25401019
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,8 +1563,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &74481679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1795,8 +1789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &81781493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2875,8 +2869,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/3
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &131517649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3143,8 +3137,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/2
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &142006191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3367,8 +3361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!1 &148431661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3590,8 +3584,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667d5f86b72164b43800a85e41c92f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFill: {fileID: 2094584344}
-  _maxValue: 1
+  ObjectToFill: {fileID: 0}
+  MaxValue: 0
 --- !u!114 &150137243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3604,8 +3598,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &150137244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3883,8 +3877,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &152701557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4574,8 +4568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &172347403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5381,8 +5375,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/0
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &201700251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6053,8 +6047,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/5
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &245689318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6394,8 +6388,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &262534009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6750,8 +6744,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &271380500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7220,7 +7214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &296293788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7318,10 +7312,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -380}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &305009830
 MonoBehaviour:
@@ -8164,10 +8158,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 555, y: -100}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336531272
 MonoBehaviour:
@@ -8313,8 +8307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/4
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &346434787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8509,8 +8503,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &355624464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9906,8 +9900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &411685577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10259,8 +10253,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/2
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &417637820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10889,8 +10883,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &439131185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11192,8 +11186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &446798905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11902,10 +11896,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -100}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486587315
 MonoBehaviour:
@@ -12431,8 +12425,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/0
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &520873319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12747,7 +12741,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &532049350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12887,7 +12881,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -13673,8 +13667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/4
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &565441662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14548,8 +14542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!1 &592952078
 GameObject:
   m_ObjectHideFlags: 0
@@ -14966,8 +14960,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/5
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &611073996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16224,10 +16218,10 @@ RectTransform:
   m_Father: {fileID: 1040886059}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 99.42499, y: -380}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674189652
 MonoBehaviour:
@@ -16472,7 +16466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76fa6fabf0da15a499129faef112a8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 691842492}
+  Sprite: {fileID: 0}
 --- !u!114 &691842492
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16639,7 +16633,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -17015,7 +17009,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -18056,7 +18050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76fa6fabf0da15a499129faef112a8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 731495428}
+  Sprite: {fileID: 0}
 --- !u!114 &731495428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18305,8 +18299,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &749544545
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18451,8 +18445,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/6
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &750469079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18757,7 +18751,7 @@ GameObject:
   - component: {fileID: 772262687}
   - component: {fileID: 772262688}
   m_Layer: 5
-  m_Name: GameObject Bank Buttons
+  m_Name: Bank Buttons Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18867,8 +18861,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set
-  propertyOrFunction: tempo
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &772363299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19354,7 +19348,7 @@ GameObject:
   - component: {fileID: 793036696}
   - component: {fileID: 793036697}
   m_Layer: 5
-  m_Name: GameObject Bank Buttons
+  m_Name: Bank Buttons Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19447,10 +19441,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1315, y: -100}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804870946
 MonoBehaviour:
@@ -19677,8 +19671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &805541330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20068,8 +20062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/3
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &828907601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20551,8 +20545,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &860764298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20697,8 +20691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/1
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &863081575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20880,8 +20874,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/2
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &878805894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21231,8 +21225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &889751291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21245,8 +21239,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667d5f86b72164b43800a85e41c92f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFill: {fileID: 2094613487}
-  _maxValue: 0
+  ObjectToFill: {fileID: 0}
+  MaxValue: 0
 --- !u!114 &889751292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21607,8 +21601,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/6
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &907523738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22249,8 +22243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &943674573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22409,8 +22403,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &947504113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22568,8 +22562,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &949110691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22792,8 +22786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/7
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &956710296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22988,8 +22982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &967099494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23124,10 +23118,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 935, y: -100}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971258924
 MonoBehaviour:
@@ -23408,7 +23402,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24051,7 +24045,7 @@ GameObject:
   - component: {fileID: 1004423696}
   - component: {fileID: 1004423700}
   m_Layer: 5
-  m_Name: GUI Manager
+  m_Name: GUI Manager Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24150,8 +24144,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a4dd2cb4d18bf740b159f6b526c6b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  configurationPanel: {fileID: 296293787}
-  mainPanelsContainer: {fileID: 532049349}
+  ConfigurationPanel: {fileID: 0}
+  MainPanelsContainer: {fileID: 0}
 --- !u!1 &1008746961
 GameObject:
   m_ObjectHideFlags: 0
@@ -24282,8 +24276,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/1
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1016733627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24399,8 +24393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/3
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1019374877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24516,8 +24510,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/4
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1021333210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24690,8 +24684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/0
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1037472638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25902,8 +25896,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/2
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1067058514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26014,7 +26008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58ef6a7e62cb42488a5c8308e9f01d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  receiver: {fileID: 407097072}
+  Receiver: {fileID: 407097072}
 --- !u!1 &1071767724
 GameObject:
   m_ObjectHideFlags: 0
@@ -26389,7 +26383,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -26830,8 +26824,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/4
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1110298371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27095,8 +27089,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1116297343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27520,10 +27514,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 935, y: -380}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124904937
 MonoBehaviour:
@@ -27810,10 +27804,10 @@ RectTransform:
   m_Father: {fileID: 1481948322}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 99.42499, y: -380}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137275105
 MonoBehaviour:
@@ -28341,7 +28335,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -28671,8 +28665,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/3
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1169132810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28788,8 +28782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/7
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1187795399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29038,8 +29032,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1192431407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29729,8 +29723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/5
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1222458100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30670,7 +30664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76fa6fabf0da15a499129faef112a8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 1257575786}
+  Sprite: {fileID: 0}
 --- !u!114 &1257575786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30955,9 +30949,9 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -672}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264938502
@@ -30972,10 +30966,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6717626bf6397404fbddaca69c30f205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToShow: {fileID: 649263160}
-  objectsToHide:
-  - {fileID: 436734770}
-  - {fileID: 1581701609}
+  ObjectToShow: {fileID: 0}
+  ObjectsToHide: []
 --- !u!114 &1264938503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31477,14 +31469,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4241e6e07115bc4468a8572692e1a359, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 1863028599467149815}
+  MainCamera: {fileID: 1863028599467149815}
   AudioEqualizer: {fileID: 20882525}
-  fixedEnvironment: {fileID: 2929486344006346889}
-  externalOSCTransmitter: {fileID: 1500396084}
-  unityOSCTransmitter: {fileID: 544978718}
-  canvas: {fileID: 1004423695}
-  tempoIndicator: {fileID: 707936773}
-  panels:
+  AttachedEnvironment: {fileID: 2929486344006346889}
+  ExternalOSCTransmitter: {fileID: 1500396084}
+  UnityOSCTransmitter: {fileID: 544978718}
+  Canvas: {fileID: 1004423695}
+  TempoIndicator: {fileID: 707936773}
+  Panels:
   - {fileID: 1428197850}
   - {fileID: 1520792036}
   - {fileID: 1663817343}
@@ -31497,28 +31489,28 @@ MonoBehaviour:
   - {fileID: 502879108}
   - {fileID: 1350563}
   - {fileID: 893315816}
-  cycleOf8Indicators:
+  CycleOf8Indicators:
   - {fileID: 691842491}
   - {fileID: 731495427}
   - {fileID: 1279033202}
   - {fileID: 1257575785}
-  fullPositionControllers:
-  - {fileID: 1108965986}
-  - {fileID: 1935138134}
-  - {fileID: 1576409635}
-  - {fileID: 375304409}
-  fireButtonTexts:
+  FullPositionControllers:
+  - {fileID: 1891536649}
+  - {fileID: 1974937736}
+  - {fileID: 1145203735}
+  - {fileID: 655671399}
+  FireButtonTexts:
   - {fileID: 940814072}
   - {fileID: 378350525}
   - {fileID: 1579815835}
   - {fileID: 38608223}
-  clipBanks:
+  ClipBanks:
   - {fileID: 793036695}
   - {fileID: 772262686}
   - {fileID: 335768301}
-  clock: 0
-  viewingIndex: 0
-  nextTrackToPlayIndex: 0
+  Clock: 0
+  ViewingIndex: 0
+  NextTrackToPlayIndex: 0
 --- !u!4 &1275522873
 Transform:
   m_ObjectHideFlags: 0
@@ -31619,7 +31611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76fa6fabf0da15a499129faef112a8d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 1279033203}
+  Sprite: {fileID: 0}
 --- !u!114 &1279033203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32080,8 +32072,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/devices/0/parameters/7
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1304266373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32197,8 +32189,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/5
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1313998422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32315,8 +32307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1326908160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32329,8 +32321,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667d5f86b72164b43800a85e41c92f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFill: {fileID: 251858726}
-  _maxValue: 0
+  ObjectToFill: {fileID: 0}
+  MaxValue: 0
 --- !u!114 &1326908161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32825,10 +32817,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 555, y: -380}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344286560
 MonoBehaviour:
@@ -33132,8 +33124,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/7
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1356028817
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33368,10 +33360,10 @@ RectTransform:
   m_Father: {fileID: 1481948322}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 99.42499, y: -100}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360490819
 MonoBehaviour:
@@ -34364,8 +34356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set
-  propertyOrFunction: tempo
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1419286664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34703,8 +34695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1443931300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35061,8 +35053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1447046017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35908,8 +35900,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/6
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1481667025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36620,8 +36612,8 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0, y: 1}
@@ -36847,8 +36839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1521029125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37105,8 +37097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1523410608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37408,7 +37400,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a784c99106964ab42b784f2619e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardMovement: 0
+  ForwardMovement: 0
 --- !u!1 &1526135356
 GameObject:
   m_ObjectHideFlags: 0
@@ -37612,8 +37604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1532999561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37990,8 +37982,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/0
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1538931814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39909,8 +39901,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/mixer_device/volume
-  propertyOrFunction: value
+  CanonicalPath: /live_set/tracks/0/mixer_device/volume
+  PropertyOrFunction: value
 --- !u!114 &1628850206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39923,8 +39915,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667d5f86b72164b43800a85e41c92f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToFill: {fileID: 1562871901}
-  _maxValue: 1
+  ObjectToFill: {fileID: 1562871901}
+  MaxValue: 1
 --- !u!1 &1630218247
 GameObject:
   m_ObjectHideFlags: 0
@@ -39961,10 +39953,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1315, y: -380}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630218250
 MonoBehaviour:
@@ -40093,10 +40085,10 @@ RectTransform:
   m_Father: {fileID: 1040886059}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 99.42499, y: -100}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635331338
 MonoBehaviour:
@@ -41105,8 +41097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: 
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1707072213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41932,9 +41924,9 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -958}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1744911230
@@ -41949,10 +41941,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6717626bf6397404fbddaca69c30f205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToShow: {fileID: 1581701609}
-  objectsToHide:
-  - {fileID: 436734770}
-  - {fileID: 649263160}
+  ObjectToShow: {fileID: 0}
+  ObjectsToHide: []
 --- !u!114 &1744911231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42327,8 +42317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/2/playing_clip/call/move_playing_position
-  propertyOrFunction: 
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1763461617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44341,7 +44331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 452a784c99106964ab42b784f2619e1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardMovement: 0
+  ForwardMovement: 0
 --- !u!4 &1885982416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444136, guid: ece113bb09a725547ad15c6e1794fbe0,
@@ -46011,8 +46001,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/1/devices/0/parameters/1
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1952998504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46128,8 +46118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/0/devices/0/parameters/1
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &1954029655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48009,9 +47999,9 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 175, y: -386}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075646966
@@ -48026,10 +48016,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6717626bf6397404fbddaca69c30f205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectToShow: {fileID: 436734770}
-  objectsToHide:
-  - {fileID: 649263160}
-  - {fileID: 1581701609}
+  ObjectToShow: {fileID: 0}
+  ObjectsToHide: []
 --- !u!114 &2075646967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49096,8 +49084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canonicalPath: /live_set/tracks/3/devices/0/parameters/6
-  propertyOrFunction: value
+  CanonicalPath: 
+  PropertyOrFunction: 
 --- !u!114 &2119659520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49727,6 +49715,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9818f9b5c84e8c8459e2e1aed09581d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camIndex: 0
-  horizontalOffset: 0
-  verticalOffset: 0
+  CamIndex: 0
+  HorizontalOffset: 0
+  VerticalOffset: 0
