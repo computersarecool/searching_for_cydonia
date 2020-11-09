@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class OSCCommunicationRouter : MonoBehaviour
 {
-    public OSCReceiver receiver;
+    public OSCReceiver Receiver;
 
     // From Unity
     public const string CameraRotateAddress = "/camera_rotate";
@@ -11,37 +11,39 @@ public class OSCCommunicationRouter : MonoBehaviour
     public const string GuiHueAddress = "/gui_hue";
 
     // From others
-    private const string TimeAddress = "/central/time";
+    private const string timeAddress = "/central/time";
 
     // From Live
-    private const string LiveEqBandAddress = "/eq/band/*";
-    private const string LiveTempoAddress = "/live_set/tempo";
-    private const string LiveClipNameAddress = "/live_set/tracks/0/clip_slots/*/clip/name";
-    private const string ClipColorsAddress = "/live_set/tracks/0/clip_slots/*/clip/color";
-    private const string LivePlayingClipPositionAddress = "/live_set/tracks/*/playing_clip/playing_position";
-    private const string PlayingClipLengthAddress = "/live_set/tracks/*/playing_clip/length";
-    private const string PlayingSlotIndexAddress = "/live_set/tracks/*/playing_clip/name";
+    private const string liveEqBandAddress = "/eq/band/*";
+    private const string liveTempoAddress = "/live_set/tempo";
+    private const string liveClipNameAddress = "/live_set/tracks/0/clip_slots/*/clip/name";
+    private const string clipColorsAddress = "/live_set/tracks/0/clip_slots/*/clip/color";
+    private const string livePlayingClipPositionAddress = "/live_set/tracks/*/playing_clip/playing_position";
+    private const string playingClipLengthAddress = "/live_set/tracks/*/playing_clip/length";
+    private const string playingSlotIndexAddress = "/live_set/tracks/*/playing_clip/name";
 
     #region MonoBehaviors
+
     public void Start()
     {
         // From Unity
-        receiver.Bind(CameraRotateAddress, RotateMainCamera);
-        receiver.Bind(CameraMoveAddress, MoveMainCamera);
-        receiver.Bind(GuiHueAddress, UpdateGuiHue);
+        this.Receiver.Bind(CameraRotateAddress, RotateMainCamera);
+        this.Receiver.Bind(CameraMoveAddress, MoveMainCamera);
+        this.Receiver.Bind(GuiHueAddress, UpdateGuiHue);
 
         // From others
-        receiver.Bind(TimeAddress, UpdateTime);
+        this.Receiver.Bind(timeAddress, UpdateTime);
 
         // From Live
-        receiver.Bind(LiveEqBandAddress, UpdateBand);
-        receiver.Bind(LiveTempoAddress, UpdateTempo);
-        receiver.Bind(LiveClipNameAddress, UpdateClipName);
-        receiver.Bind(ClipColorsAddress, UpdateClipColor);
-        receiver.Bind(LivePlayingClipPositionAddress, UpdateTrackPosition);
-        receiver.Bind(PlayingClipLengthAddress, UpdateClipLength);
-        receiver.Bind(PlayingSlotIndexAddress, UpdatePlayingSlotIndex);
+        this.Receiver.Bind(liveEqBandAddress, UpdateBand);
+        this.Receiver.Bind(liveTempoAddress, UpdateTempo);
+        this.Receiver.Bind(liveClipNameAddress, UpdateClipName);
+        this.Receiver.Bind(clipColorsAddress, UpdateClipColor);
+        this.Receiver.Bind(livePlayingClipPositionAddress, UpdateTrackPosition);
+        this.Receiver.Bind(playingClipLengthAddress, UpdateClipLength);
+        this.Receiver.Bind(playingSlotIndexAddress, UpdatePlayingSlotIndex);
     }
+
     #endregion
 
     // From Unity
@@ -71,7 +73,7 @@ public class OSCCommunicationRouter : MonoBehaviour
     {
         if (!message.ToFloat(out var value)) return;
 
-        SettingsSingleton.Instance.clock = value;
+        SettingsSingleton.Instance.Clock = value;
     }
 
     // From Live

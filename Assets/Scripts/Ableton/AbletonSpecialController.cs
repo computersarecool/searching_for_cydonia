@@ -2,50 +2,50 @@
 
 public class AbletonSpecialController : MonoBehaviour
 {
-    private AbletonController _liveController;
-    private const int SceneIncrementAmount = 8;
-    private readonly string[] _bankClipPropertiesToGet = { "name", "color" };
+    private AbletonController liveController;
+    private const int sceneIncrementAmount = 8;
+    private readonly string[] bankClipPropertiesToGet = { "name", "color" };
     
     public void IncrementalTempoChange(bool increase)
     {
         var currentTempo = SettingsSingleton.Instance.LiveSetTempo;
         var nextTempo = increase ? currentTempo + 1 : currentTempo - 1;
-        _liveController.SetProperty(nextTempo);
+        this.liveController.SetProperty(nextTempo);
     }
 
     public void AdvanceScene(bool increase)
     {
         // Get next scene
-        var currentSceneIndex = SettingsSingleton.Instance.viewingIndex;
-        var nextSceneIndex = increase ? currentSceneIndex + SceneIncrementAmount : currentSceneIndex - SceneIncrementAmount;
+        var currentSceneIndex = SettingsSingleton.Instance.ViewingIndex;
+        var nextSceneIndex = increase ? currentSceneIndex + sceneIncrementAmount : currentSceneIndex - sceneIncrementAmount;
         if (nextSceneIndex < 0)
             nextSceneIndex = 0;
         
-        SettingsSingleton.Instance.viewingIndex = nextSceneIndex;
+        SettingsSingleton.Instance.ViewingIndex = nextSceneIndex;
 
         // Get data for next set of clips
-        for (var index = nextSceneIndex; index < nextSceneIndex + SceneIncrementAmount; index++)
+        for (var index = nextSceneIndex; index < nextSceneIndex + sceneIncrementAmount; index++)
         {
             // It is expected that all tracks have the same clips so this gets the clips and track 0
-            _liveController.canonicalPath = $"/live_set/tracks/0/clip_slots/{index}/clip";
+            this.liveController.CanonicalPath = $"/live_set/tracks/0/clip_slots/{index}/clip";
 
-            foreach (var property in _bankClipPropertiesToGet)
+            foreach (var property in this.bankClipPropertiesToGet)
             {
-                _liveController._propertyOrFunction = property;
-                _liveController.GetProperty();
+                this.liveController.PropertyOrFunction = property;
+                this.liveController.GetProperty();
             }
         }
     }
 
     public void FireClip(int trackIndex)
     {
-        _liveController.canonicalPath = $"/live_set/tracks/{trackIndex}/clip_slots/{SettingsSingleton.Instance.nextTrackToPlayIndex}/clip";
-        _liveController._propertyOrFunction = "fire";
-        _liveController.CallFunction();
+        this.liveController.CanonicalPath = $"/live_set/tracks/{trackIndex}/clip_slots/{SettingsSingleton.Instance.NextTrackToPlayIndex}/clip";
+        this.liveController.PropertyOrFunction = "fire";
+        this.liveController.CallFunction();
     }
 
     private void Start()
     {
-        _liveController = GetComponent<AbletonController>();
+        this.liveController = GetComponent<AbletonController>();
     }
 }

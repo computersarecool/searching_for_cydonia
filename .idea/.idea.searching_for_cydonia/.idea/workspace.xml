@@ -2,10 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Simplifies scripts.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioEqualizer/AudioEqualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioEqualizer/AudioEqualizer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/FOVCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/FOVCalculator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectHider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectHider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,12 +50,10 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ChangeGuiHue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ViewRotator.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Render Objects/AudioEqualizer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ConfigurationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GuiController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Debug/FOVCalculator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CameraSelector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/CameraMover.cs" />
@@ -54,12 +64,18 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraSelector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraMover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/ViewMover.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectHider.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" />
       <option value="$PROJECT_DIR$/.gitignore" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/FOVCalculator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" />
+      <option value="$PROJECT_DIR$/.editorconfig" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" />
     </changedPaths>
   </component>
   <component name="NamedScopeManager">
@@ -83,7 +99,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CodeInspectionSettingsId" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RiderTodoViewSettings" groupByProject="false" />
@@ -128,7 +144,8 @@
       <workItem from="1604831910001" duration="4732000" />
       <workItem from="1604894508631" duration="1033000" />
       <workItem from="1604895614915" duration="699000" />
-      <workItem from="1604896337499" duration="796000" />
+      <workItem from="1604896337499" duration="22054000" />
+      <workItem from="1604921940215" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="Hierarchy refactor.">
       <created>1604808831322</created>
@@ -158,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604895382907</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adds .idea file.">
+      <created>1604899097149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604899097149</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +208,7 @@
     <MESSAGE value="Adds missed meta file." />
     <MESSAGE value="Adds editorconfig and renames objects." />
     <MESSAGE value="Simplifies scripts." />
-    <option name="LAST_COMMIT_MESSAGE" value="Simplifies scripts." />
+    <MESSAGE value="Adds .idea file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds .idea file." />
   </component>
 </project>

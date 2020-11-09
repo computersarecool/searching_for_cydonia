@@ -2,22 +2,22 @@
 
 public class AudioEqualizer : MonoBehaviour
 {
-    public float scale;
-    public GameObject[] cubes;
+    public float Scale;
+    public GameObject[] Cubes;
 
     public void UpdateBand(int bandIndex, float value)
     {
-        if (bandIndex >= cubes.Length) return;
+        if (bandIndex >= this.Cubes.Length) return;
         
-        var selectedCube = cubes[bandIndex];
+        var selectedCube = this.Cubes[bandIndex];
         var localScale = selectedCube.transform.localScale;
-        var newScale = value * scale;
+        var newScale = value * this.Scale;
         selectedCube.transform.localScale = new Vector3(localScale.x, newScale, localScale.z);
     }
 
     public void UpdateHue(float newHue)
     {
-        foreach (var cube in cubes)
+        foreach (var cube in this.Cubes)
         {
             var mat = cube.GetComponent<Renderer>().material;
             var originalColor = mat.color;

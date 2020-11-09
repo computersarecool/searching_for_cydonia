@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 public class GUIFiller : MonoBehaviour
 {
-    public Image objectToFill;
-    public float _maxValue;
+    public Image ObjectToFill;
+    public float MaxValue;
 
     public void FillObject(float value)
     {
-        objectToFill.fillAmount = value / _maxValue;
+        this.ObjectToFill.fillAmount = value / this.MaxValue;
     }
 }

@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class GUIManager : MonoBehaviour
 {
-    public GameObject _configurationPanel;
-    public GameObject mainPanelsContainer;
+    public GameObject ConfigurationPanel;
+    public GameObject MainPanelsContainer;
 
     public void TogglePanels(bool showConfig)
     {
-        _configurationPanel.SetActive(showConfig);
-        mainPanelsContainer.SetActive(!showConfig);
+        this.ConfigurationPanel.SetActive(showConfig);
+        this.MainPanelsContainer.SetActive(!showConfig);
     }
 }

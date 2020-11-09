@@ -2,27 +2,27 @@
 
 [RequireComponent(typeof(Camera))]
 public class FOVCalculator : MonoBehaviour {
-    private Camera _cam;
-    private float _horizontalFov;
-    private float _loggedFov;
+    private Camera cam;
+    private float horizontalFov;
+    private float loggedFov;
 
     public void OnDrawGizmos()
     {
-        _cam = gameObject.GetComponent<Camera>();
-        if (_cam == null) return;
+        this.cam = GetComponent<Camera>();
+        if (this.cam == null) return;
         
-        _horizontalFov = GetHorizontalAngle(_cam);
-        if (_horizontalFov == _loggedFov) return;
+        this.horizontalFov = GetHorizontalAngle(this.cam);
+        if (this.horizontalFov == this.loggedFov) return;
         
-        _loggedFov = _horizontalFov;
-        LogFov(_horizontalFov);
+        this.loggedFov = this.horizontalFov;
+        LogFov(this.horizontalFov);
     }
 
     public void OnEnable()
     {
-        if (_loggedFov != 0)
+        if (this.loggedFov != 0)
         {
-            LogFov(_loggedFov);
+            LogFov(this.loggedFov);
         }
     }
     
@@ -35,6 +35,6 @@ public class FOVCalculator : MonoBehaviour {
     
     private void LogFov(float value)
     {
-        Debug.Log(name + "FOV: " + value);
+        Debug.Log(this.name + "FOV: " + value);
     }
 }

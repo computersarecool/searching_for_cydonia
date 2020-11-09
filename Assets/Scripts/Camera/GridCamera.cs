@@ -12,53 +12,53 @@ using UnityEngine;
 [RequireComponent(typeof(Camera))]
 public class GridCamera : MonoBehaviour
 {
-    public int camIndex;
-    public float horizontalOffset;
-    public float verticalOffset;
+    public int CamIndex;
+    public float HorizontalOffset;
+    public float VerticalOffset;
     
-    private Camera _cam;
+    private Camera cam;
 
     // Camera grid layout
-    private const int NumRows = 3;
-    private const int CamsPerRow = 4;
+    private const int numRows = 3;
+    private const int camsPerRow = 4;
 
     // Camera settings
-    private const float TotalFOV = 60.0F;
-    private const float TotalFovRad = Mathf.Deg2Rad * TotalFOV;
-    private const float IndividualAspectRatio = 1.6F;
+    private const float totalFOV = 60.0F;
+    private const float totalFovRad = Mathf.Deg2Rad * totalFOV;
+    private const float individualAspectRatio = 1.6F;
 
     private void OnValidate()
     {
-        Mathf.Clamp(camIndex, 0, NumRows * CamsPerRow - 1);
+        Mathf.Clamp(this.CamIndex, 0, numRows * camsPerRow - 1);
     }
 
     private void Start()
     {
-        _cam = GetComponent<Camera>();
+        this.cam = GetComponent<Camera>();
     }
 
     private void LateUpdate()
     {
         // This could be called once on start for optimization
-        _cam.projectionMatrix = GetIndividualProjectionMatrix();
+        this.cam.projectionMatrix = GetIndividualProjectionMatrix();
     }
 
     private Matrix4x4 GetIndividualProjectionMatrix()
     {
-        const int middleRow = NumRows / 2;
-        const int middleColumn = CamsPerRow / 2;
+        const int middleRow = numRows / 2;
+        const int middleColumn = camsPerRow / 2;
         
         // Avoid repeated accessing of built-ins
-        var nearClip = _cam.nearClipPlane;
-        var farClip = _cam.farClipPlane;
+        var nearClip = this.cam.nearClipPlane;
+        var farClip = this.cam.farClipPlane;
         
         // Camera position in grid
-        var column = camIndex % CamsPerRow;
-        var row = camIndex / CamsPerRow;
+        var column = this.CamIndex % camsPerRow;
+        var row = this.CamIndex / camsPerRow;
 
         // Get near plane width
-        var nearPlaneWidth = 2 * nearClip * (float)Math.Tan(TotalFovRad / 2);
-        var individualNearPlaneWidth = nearPlaneWidth / CamsPerRow;
+        var nearPlaneWidth = 2 * nearClip * (float)Math.Tan(totalFovRad / 2);
+        var individualNearPlaneWidth = nearPlaneWidth / camsPerRow;
         
         // Calculate column offset from center
         var offsetColumn = middleColumn - column;
@@ -73,17 +73,17 @@ public class GridCamera : MonoBehaviour
 
         // Calculate vertical plane going up from center
         var offsetRow = Math.Abs(middleRow - row);
-        var nearPlaneHeight = individualNearPlaneWidth / IndividualAspectRatio;
+        var nearPlaneHeight = individualNearPlaneWidth / individualAspectRatio;
         var top = nearPlaneHeight / 2 + offsetRow * nearPlaneHeight;
         var bottom = top - nearPlaneHeight;
 
         // Add horizontal offsets
-        var totalHorizontalOffset = offsetColumn * horizontalOffset;
+        var totalHorizontalOffset = offsetColumn * this.HorizontalOffset;
         left += totalHorizontalOffset;
         right += totalHorizontalOffset;
         
         // Add vertical offsets
-        var totalVerticalOffset = offsetRow * verticalOffset;
+        var totalVerticalOffset = offsetRow * this.VerticalOffset;
         if (row != middleRow)
         {
             top += totalVerticalOffset;
@@ -91,7 +91,7 @@ public class GridCamera : MonoBehaviour
         }
 
         // Negate and swap horizontal values if camera is to the left of center
-        if (column < CamsPerRow / 2)
+        if (column < camsPerRow / 2)
         {
             var newRight = -left;
             left = -right;

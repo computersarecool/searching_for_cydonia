@@ -2,16 +2,16 @@
 
 public class ObjectHider : MonoBehaviour
 {
-    public GameObject objectToShow;
-    public GameObject[] objectsToHide;
+    public GameObject ObjectToShow;
+    public GameObject[] ObjectsToHide;
 
     public void ShowAndHide()
     {
-        foreach (var obj in objectsToHide)
+        foreach (var obj in this.ObjectsToHide)
         {
             obj.SetActive(false);
         }
 
-        objectToShow.SetActive(true);
+        this.ObjectToShow.SetActive(true);
     }
 }

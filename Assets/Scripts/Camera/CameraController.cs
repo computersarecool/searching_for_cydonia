@@ -4,63 +4,54 @@ using UnityEngine.EventSystems;
 
 public class CameraController: MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public bool forwardMovement;
+    public bool ForwardMovement;
     
-    private bool _pressed;
-    private const int MoveAmount = 5;
+    private bool pressed;
+    private const int moveAmount = 5;
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        _pressed = true;
+        this.pressed = true;
     }
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        _pressed = false;
+        this.pressed = false;
     }
 
     public void Update()
     {
-        if (_pressed)
+        if (this.pressed)
         {
-            Move(forwardMovement);
+            Move(this.ForwardMovement);
         }
     }
 
     private static void Move(bool goForward)
     {
-        Vector3 newPosition;
-        if (goForward)
-        {
-            newPosition = SettingsSingleton.Instance.fixedEnvironment.transform.position + MoveAmount * Time.deltaTime * SettingsSingleton.Instance.mainCamera.transform.forward;
-        }
-        else
-        {
-            newPosition = SettingsSingleton.Instance.fixedEnvironment.transform.position - MoveAmount * Time.deltaTime * SettingsSingleton.Instance.mainCamera.transform.forward;
-        }
-        
-        SettingsSingleton.Instance.fixedEnvironment.transform.position = newPosition;
+        var newPosition = goForward
+            ? SettingsSingleton.Instance.FixedEnvironment.transform.position + moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward
+            : SettingsSingleton.Instance.FixedEnvironment.transform.position - moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward;
+
+        SettingsSingleton.Instance.FixedEnvironment.transform.position = newPosition;
 
        
         var message = new OSCMessage($"{OSCCommunicationRouter.CameraMoveAddress}");
         message.AddValue(OSCValue.Float(newPosition.x));
         message.AddValue(OSCValue.Float(newPosition.y));
         message.AddValue(OSCValue.Float(newPosition.z));
-        SettingsSingleton.Instance.unityOSCTransmitter.Send(message);
+        SettingsSingleton.Instance.UnityOSCTransmitter.Send(message);
     }
 
     public void RotateView(Vector2 rotationAmount)
     {
         var vector = new Vector3(rotationAmount.y, -rotationAmount.x, 0);
-        SettingsSingleton.Instance.mainCamera.transform.eulerAngles = vector;
+        SettingsSingleton.Instance.MainCamera.transform.eulerAngles = vector;
 
         var message = new OSCMessage($"{OSCCommunicationRouter.CameraRotateAddress}");
         message.AddValue(OSCValue.Float(vector.x));
         message.AddValue(OSCValue.Float(vector.y));
         message.AddValue(OSCValue.Float(vector.z));
-
-        SettingsSingleton.Instance.unityOSCTransmitter.Send(message);
+        SettingsSingleton.Instance.UnityOSCTransmitter.Send(message);
     }
-
 }
-

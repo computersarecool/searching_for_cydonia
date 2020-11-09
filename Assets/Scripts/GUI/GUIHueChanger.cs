@@ -7,6 +7,6 @@ public class GUIHueChanger : MonoBehaviour
     {
         var message = new OSCMessage($"{OSCCommunicationRouter.GuiHueAddress}");
         message.AddValue(OSCValue.Float(val));
-        SettingsSingleton.Instance.unityOSCTransmitter.Send(message);
+        SettingsSingleton.Instance.UnityOSCTransmitter.Send(message);
     }
 }

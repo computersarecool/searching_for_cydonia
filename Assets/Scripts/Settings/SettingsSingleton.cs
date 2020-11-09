@@ -6,66 +6,67 @@ public class SettingsSingleton : MonoBehaviour
 {
     public static SettingsSingleton Instance { get; private set; }
 
-    public Camera mainCamera;
+    public Camera MainCamera;
     public AudioEqualizer AudioEqualizer;
-    public GameObject fixedEnvironment;
+    public GameObject FixedEnvironment;
 
     [Header("Communication")]
-    public OSCTransmitter externalOSCTransmitter;
-    public OSCTransmitter unityOSCTransmitter;
+    public OSCTransmitter ExternalOSCTransmitter;
+    public OSCTransmitter UnityOSCTransmitter;
 
     [Header("GUI")]
-    public GameObject canvas;
-    public Text tempoIndicator;
-    public GameObject[] panels;
-    public TrackPositionController[] cycleOf8Indicators;
-    public Image[] fullPositionControllers;
-    public Text[] fireButtonTexts;
-    public GameObject[] clipBanks;
+    public GameObject Canvas;
+    public Text TempoIndicator;
+    public GameObject[] Panels;
+    public TrackPositionController[] CycleOf8Indicators;
+    public Image[] FullPositionControllers;
+    public Text[] FireButtonTexts;
+    public GameObject[] ClipBanks;
 
-    [HideInInspector] public float clock;
-    [HideInInspector] public int viewingIndex;
-    [HideInInspector] public int nextTrackToPlayIndex;
+    [HideInInspector] public float Clock;
+    [HideInInspector] public int ViewingIndex;
+    [HideInInspector] public int NextTrackToPlayIndex;
 
+    private float liveSetTempo;
     public float LiveSetTempo
     {
-        get => _liveSetTempo;
+        get => this.liveSetTempo;
         set
         {
-            _liveSetTempo = value;
-            tempoIndicator.text = value.ToString("F0");
+            this.liveSetTempo = value;
+            this.TempoIndicator.text = value.ToString("F0");
         }
     }
+
+    private int interfaceIndex;
     public int InterfaceIndex
     {
-        get => _interfaceIndex;
+        get => this.interfaceIndex;
         set
         {
-            _interfaceIndex = value;
-            for (var i = 0; i < panels.Length; i++)
+            interfaceIndex = value;
+            for (var i = 0; i < Panels.Length; i++)
             {
-                panels[i].SetActive(i == _interfaceIndex);
+                Panels[i].SetActive(i == interfaceIndex);
             }
         }
     }
 
-    public int cameraIndex
+    private int cameraIndex;
+    public int CameraIndex
     {
         set
         {
-            this.mainCamera.GetComponent<GridCamera>().camIndex = value;
-            this._cameraIndex = value;
+            this.MainCamera.GetComponent<GridCamera>().CamIndex = value;
+            this.cameraIndex = value;
         }
     }
 
-    private readonly float[] _playingClipsLength = {1.0f, 1.0f, 1.0f, 1.0f};
-    private const int CamRotationControlIndex = 2;
-    private const int CamMovementControlIndex = 6;
-    private int _cameraIndex;
-    private int _interfaceIndex;
-    private float _liveSetTempo;
-    private Image[] _uiImages;
-    private Text[] _uiTexts;
+    private readonly float[] playingClipsLength = {1.0f, 1.0f, 1.0f, 1.0f};
+    private const int camRotationControlIndex = 2;
+    private const int camMovementControlIndex = 6;
+    private Image[] uiImages;
+    private Text[] uiTexts;
 
     #region MonoBehaviours
     private void Awake()
@@ -75,8 +76,8 @@ public class SettingsSingleton : MonoBehaviour
         Invoke(nameof(GetSetState), delayForNetwork);
 
         // Collect GUI objects for hue change
-        _uiImages = canvas.GetComponentsInChildren<Image>(true);
-        _uiTexts = canvas.GetComponentsInChildren<Text>(true);
+        uiImages = Canvas.GetComponentsInChildren<Image>(true);
+        uiTexts = Canvas.GetComponentsInChildren<Text>(true);
 
         // Singleton code
         if (Instance != null && Instance != this)
@@ -96,11 +97,11 @@ public class SettingsSingleton : MonoBehaviour
         // Get data from live on start
         var message = new OSCMessage("live_set/get");
         message.AddValue(OSCValue.String("tempo"));
-        externalOSCTransmitter.Send(message);
+        ExternalOSCTransmitter.Send(message);
 
         message = new OSCMessage("live_set/view/get");
         message.AddValue(OSCValue.String("selected_scene_index"));
-        externalOSCTransmitter.Send(message);
+        ExternalOSCTransmitter.Send(message);
     }
     #endregion
 
@@ -114,8 +115,8 @@ public class SettingsSingleton : MonoBehaviour
         const int titleIndex = 3;
 
         var clipNameArray = clipName.Split('-');
-        var buttonIndex = clipIndex - viewingIndex;
-        foreach (var clipBank in clipBanks)
+        var buttonIndex = clipIndex - this.ViewingIndex;
+        foreach (var clipBank in this.ClipBanks)
         {
             var clipTextObjects = clipBank.transform.GetChild(buttonIndex).gameObject.GetComponentsInChildren<Text>();
 
@@ -141,8 +142,8 @@ public class SettingsSingleton : MonoBehaviour
         var colorGf = colorG / 255.0f;
         var colorBf = colorB / 255.0f;
 
-        var buttonIndex = clipIndex - viewingIndex;
-        foreach (var clipBank in clipBanks)
+        var buttonIndex = clipIndex - this.ViewingIndex;
+        foreach (var clipBank in this.ClipBanks)
         {
             var buttons = clipBank.GetComponentsInChildren<Button>();
             var clipButton = buttons[buttonIndex];
@@ -155,36 +156,36 @@ public class SettingsSingleton : MonoBehaviour
     public void UpdatePlayingClipPosition(int trackNumber, float position)
     {
         // Update full track length percent in the GUI
-        fullPositionControllers[trackNumber].fillAmount = position / _playingClipsLength[trackNumber];
+        this.FullPositionControllers[trackNumber].fillAmount = position / this.playingClipsLength[trackNumber];
 
         // Update cycle of 8
         var cycleOf8 = (int) position % 8;
-        cycleOf8Indicators[trackNumber].UpdatePos(cycleOf8);
+        this.CycleOf8Indicators[trackNumber].UpdatePos(cycleOf8);
     }
 
     public void UpdateClipLength(int trackIndex, float length)
     {
-        _playingClipsLength[trackIndex] = length;
+        this.playingClipsLength[trackIndex] = length;
     }
 
     public void UpdatePlayingClipName(int trackIndex, string clipName)
     {
-        fireButtonTexts[trackIndex].text = clipName;
+        this.FireButtonTexts[trackIndex].text = clipName;
     }
 
     public void UpdateCameraRotation(Vector3 vector)
     {
-        if (_cameraIndex != CamRotationControlIndex)
-            mainCamera.transform.eulerAngles = vector;
+        if (this.cameraIndex != camRotationControlIndex)
+            this.MainCamera.transform.eulerAngles = vector;
     }
 
     public void UpdateGUIHue(float newHue)
     {
-        if (!(newHue > .01) || !(newHue < 1.01)) return;
+        if (newHue < .01 || newHue > 1.0) return;
 
-        AudioEqualizer.UpdateHue(newHue);
+        this.AudioEqualizer.UpdateHue(newHue);
 
-        foreach (var uiElement in _uiImages)
+        foreach (var uiElement in this.uiImages)
         {
             var originalColor = uiElement.color;
             var originalAlpha = originalColor.a;
@@ -193,7 +194,7 @@ public class SettingsSingleton : MonoBehaviour
             uiElement.color = new Color(rgbColor.r, rgbColor.g, rgbColor.b, originalAlpha);
         }
 
-        foreach (var uiElement in _uiTexts)
+        foreach (var uiElement in this.uiTexts)
         {
             var originalColor = uiElement.color;
             var originalAlpha = originalColor.a;
@@ -205,13 +206,13 @@ public class SettingsSingleton : MonoBehaviour
 
     public void MoveMainCameraAndEnvironment(Vector3 vector)
     {
-        if (_cameraIndex != CamMovementControlIndex)
-            fixedEnvironment.transform.position = vector;
+        if (this.cameraIndex != camMovementControlIndex)
+            this.FixedEnvironment.transform.position = vector;
     }
 
     public void StoreTrackIndex(int index)
     {
-        Instance.nextTrackToPlayIndex = index + Instance.viewingIndex;
+        Instance.NextTrackToPlayIndex = index + Instance.ViewingIndex;
     }
 
     public void SelectInterface(int index)
@@ -221,6 +222,6 @@ public class SettingsSingleton : MonoBehaviour
 
     public void SelectCamera(int index)
     {
-        Instance.cameraIndex = index;
+        Instance.CameraIndex = index;
     }
 }
