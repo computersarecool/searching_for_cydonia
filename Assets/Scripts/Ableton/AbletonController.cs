@@ -4,13 +4,13 @@ using UnityEngine;
 public class AbletonController : MonoBehaviour
 {
     public string canonicalPath;
-    public string propertyOrFunction;
+    public string _propertyOrFunction;
     
     public void CallFunction()
     {
         var message = new OSCMessage($"{canonicalPath}");
         message.AddValue(OSCValue.String("call"));
-        message.AddValue(OSCValue.String(propertyOrFunction));
+        message.AddValue(OSCValue.String(this._propertyOrFunction));
         SettingsSingleton.Instance.externalOSCTransmitter.Send(message);
     }
     
@@ -18,7 +18,7 @@ public class AbletonController : MonoBehaviour
     {
         var message = new OSCMessage($"{canonicalPath}");
         message.AddValue(OSCValue.String("get"));
-        message.AddValue(OSCValue.String(propertyOrFunction));
+        message.AddValue(OSCValue.String(this._propertyOrFunction));
         SettingsSingleton.Instance.externalOSCTransmitter.Send(message);
     }
 
@@ -26,7 +26,7 @@ public class AbletonController : MonoBehaviour
     {
         var message = new OSCMessage($"{canonicalPath}");
         message.AddValue(OSCValue.String("set"));
-        message.AddValue(OSCValue.String(propertyOrFunction));
+        message.AddValue(OSCValue.String(this._propertyOrFunction));
         message.AddValue(OSCValue.Float(val));
         SettingsSingleton.Instance.externalOSCTransmitter.Send(message);
     }

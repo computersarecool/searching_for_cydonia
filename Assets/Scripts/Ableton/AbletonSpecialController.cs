@@ -31,7 +31,7 @@ public class AbletonSpecialController : MonoBehaviour
 
             foreach (var property in _bankClipPropertiesToGet)
             {
-                _liveController.propertyOrFunction = property;
+                _liveController._propertyOrFunction = property;
                 _liveController.GetProperty();
             }
         }
@@ -40,7 +40,7 @@ public class AbletonSpecialController : MonoBehaviour
     public void FireClip(int trackIndex)
     {
         _liveController.canonicalPath = $"/live_set/tracks/{trackIndex}/clip_slots/{SettingsSingleton.Instance.nextTrackToPlayIndex}/clip";
-        _liveController.propertyOrFunction = "fire";
+        _liveController._propertyOrFunction = "fire";
         _liveController.CallFunction();
     }
 

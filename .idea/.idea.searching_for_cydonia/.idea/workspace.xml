@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Simplifies scripts.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/Core/OSCConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/PostProcessing/Runtime/Components/BloomComponent.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Examples/13) Marshalling/Scripts/MarshallingExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCTransmitter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Constants.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/PickCamera.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ConfigurationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Render Objects/AudioEqualizerController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/CommunicationController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCMessageRouter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ChangeGuiHue.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ViewRotator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Render Objects/AudioEqualizer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ConfigurationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GuiController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Debug/FOVCalculator.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CameraSelector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/CameraMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ViewMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/InterfaceSelector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraSelector.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/ViewMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectHider.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" />
+      <option value="$PROJECT_DIR$/.gitignore" />
+    </changedPaths>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Local" pattern="!file[riderModule]:Assets/AssetStoreDownloads//*" />
+  </component>
+  <component name="ProjectId" id="1j7jERpSqgy4CAoegJuNIag8nuj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="Local" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CodeInspectionSettingsId" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RiderTodoViewSettings" groupByProject="false" />
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="" />
+      <created>1603161916007</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603161916007</updated>
+      <workItem from="1603161930635" duration="5000" />
+      <workItem from="1603184889949" duration="41000" />
+      <workItem from="1603185052328" duration="398000" />
+      <workItem from="1603264315070" duration="4914000" />
+      <workItem from="1603324855283" duration="8255000" />
+      <workItem from="1603355331728" duration="1949000" />
+      <workItem from="1603415682252" duration="7323000" />
+      <workItem from="1604568287875" duration="1725000" />
+      <workItem from="1604804944154" duration="6943000" />
+      <workItem from="1604812401145" duration="598000" />
+      <workItem from="1604831910001" duration="4732000" />
+      <workItem from="1604894508631" duration="1033000" />
+      <workItem from="1604895614915" duration="699000" />
+      <workItem from="1604896337499" duration="796000" />
+    </task>
+    <task id="LOCAL-00001" summary="Hierarchy refactor.">
+      <created>1604808831322</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604808831322</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Adds missed meta file.">
+      <created>1604809140790</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604809140790</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adds editorconfig and renames objects.">
+      <created>1604837996269</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604837996269</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Simplifies scripts.">
+      <created>1604895382907</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604895382907</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Hierarchy refactor." />
+    <MESSAGE value="Adds missed meta file." />
+    <MESSAGE value="Adds editorconfig and renames objects." />
+    <MESSAGE value="Simplifies scripts." />
+    <option name="LAST_COMMIT_MESSAGE" value="Simplifies scripts." />
+  </component>
+</project>
