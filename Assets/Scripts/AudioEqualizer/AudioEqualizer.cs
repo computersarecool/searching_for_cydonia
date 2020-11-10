@@ -8,11 +8,13 @@ public class AudioEqualizer : MonoBehaviour
     public void UpdateBand(int bandIndex, float value)
     {
         if (bandIndex >= this.Cubes.Length) return;
-        
+
         var selectedCube = this.Cubes[bandIndex];
         var localScale = selectedCube.transform.localScale;
+        var localPosition = selectedCube.transform.localPosition;
         var newScale = value * this.Scale;
         selectedCube.transform.localScale = new Vector3(localScale.x, newScale, localScale.z);
+        selectedCube.transform.localPosition = new Vector3(localPosition.x, newScale / 2.0f, localPosition.z);
     }
 
     public void UpdateHue(float newHue)
