@@ -444,8 +444,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -818,8 +818,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -1104,8 +1104,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -2759,26 +2759,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 6
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 125924689}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6409,7 +6397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &296293788
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6624,10 +6612,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175, y: -380}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &305009830
 MonoBehaviour:
@@ -7318,10 +7306,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 555, y: -100}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &336531272
 MonoBehaviour:
@@ -7918,8 +7906,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -8236,8 +8224,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -8972,8 +8960,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 552.8745, y: 0}
-  m_SizeDelta: {x: -1164.1421, y: -685.71436}
+  m_AnchoredPosition: {x: 532.7328, y: 0}
+  m_SizeDelta: {x: -1204.4255, y: -685.71436}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &436734772
 MonoBehaviour:
@@ -10040,10 +10028,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175, y: -100}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486587315
 MonoBehaviour:
@@ -10645,7 +10633,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11682,8 +11670,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -12965,8 +12953,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -13886,10 +13874,10 @@ RectTransform:
   m_Father: {fileID: 1040886059}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99.42499, y: -380}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &674189652
 MonoBehaviour:
@@ -14598,7 +14586,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -16634,10 +16622,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1315, y: -100}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &804870946
 MonoBehaviour:
@@ -17122,8 +17110,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -18884,8 +18872,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -19898,10 +19886,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 935, y: -100}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &971258924
 MonoBehaviour:
@@ -20471,8 +20459,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -20757,8 +20745,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -22579,7 +22567,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -23133,8 +23121,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -23577,10 +23565,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 935, y: -380}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1124904937
 MonoBehaviour:
@@ -24091,10 +24079,10 @@ RectTransform:
   m_Father: {fileID: 1481948322}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99.42499, y: -380}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137275105
 MonoBehaviour:
@@ -24726,7 +24714,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 66.9}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -25433,8 +25421,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -26539,8 +26527,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -27048,9 +27036,9 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175, y: -672}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1264938502
@@ -27065,8 +27053,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6717626bf6397404fbddaca69c30f205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToShow: {fileID: 0}
-  ObjectsToHide: []
+  ObjectToShow: {fileID: 649263160}
+  ObjectsToHide:
+  - {fileID: 436734770}
+  - {fileID: 1581701609}
 --- !u!114 &1264938503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27447,8 +27437,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -28314,10 +28304,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 555, y: -380}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344286560
 MonoBehaviour:
@@ -28582,10 +28572,10 @@ RectTransform:
   m_Father: {fileID: 1481948322}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99.42499, y: -100}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360490819
 MonoBehaviour:
@@ -30252,8 +30242,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -31458,8 +31448,8 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0, y: 1}
@@ -32837,8 +32827,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -33279,8 +33269,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -34125,8 +34115,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -34551,10 +34541,10 @@ RectTransform:
   m_Father: {fileID: 335768302}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1315, y: -380}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1630218250
 MonoBehaviour:
@@ -34683,10 +34673,10 @@ RectTransform:
   m_Father: {fileID: 1040886059}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99.42499, y: -100}
-  m_SizeDelta: {x: 350, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1635331338
 MonoBehaviour:
@@ -35275,7 +35265,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1663817344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -36008,8 +35998,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: CameraSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
         m_Arguments:
@@ -36420,9 +36410,9 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175, y: -958}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1744911230
@@ -36437,8 +36427,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6717626bf6397404fbddaca69c30f205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToShow: {fileID: 0}
-  ObjectsToHide: []
+  ObjectToShow: {fileID: 1581701609}
+  ObjectsToHide:
+  - {fileID: 649263160}
+  - {fileID: 436734770}
 --- !u!114 &1744911231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38370,8 +38362,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -40709,8 +40701,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
@@ -42813,10 +42805,10 @@ RectTransform:
   m_Father: {fileID: 1522739665}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 175, y: -386}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 350, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2075646966
 MonoBehaviour:
@@ -42830,8 +42822,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6717626bf6397404fbddaca69c30f205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectToShow: {fileID: 0}
-  ObjectsToHide: []
+  ObjectToShow: {fileID: 436734770}
+  ObjectsToHide:
+  - {fileID: 649263160}
+  - {fileID: 1581701609}
 --- !u!114 &2075646967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43064,8 +43058,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: InterfaceSelector, Assembly-CSharp
+      - m_Target: {fileID: 1275522872}
+        m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
         m_Arguments:
