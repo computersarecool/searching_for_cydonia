@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using extOSC;
+using UnityEngine;
 
 public class AbletonSpecialController : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class AbletonSpecialController : MonoBehaviour
         this.liveController.SetProperty(nextTempo);
     }
 
-    public void AdvanceScene(bool increase)
+    public void ScrollScenes(bool increase)
     {
         // Get next scene
         var currentSceneIndex = SettingsSingleton.Instance.ViewingIndex;
@@ -39,7 +40,7 @@ public class AbletonSpecialController : MonoBehaviour
 
     public void FireClip(int trackIndex)
     {
-        this.liveController.CanonicalPath = $"/live_set/tracks/{trackIndex}/clip_slots/{SettingsSingleton.Instance.NextTrackToPlayIndex}/clip";
+        this.liveController.CanonicalPath = $"/live_set/tracks/{trackIndex}/clip_slots/{SettingsSingleton.Instance.NextSceneToPlay}/clip";
         this.liveController.PropertyOrFunction = "fire";
         this.liveController.CallFunction();
     }

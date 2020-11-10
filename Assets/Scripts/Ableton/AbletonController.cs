@@ -30,4 +30,12 @@ public class AbletonController : MonoBehaviour
         message.AddValue(OSCValue.Float(val));
         SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
     }
+
+    // Special case
+    public void MovePlayingPosition(int val)
+    {
+        var message = new OSCMessage($"{CanonicalPath}");
+        message.AddValue(OSCValue.Int(val));
+        SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
+    }
 }

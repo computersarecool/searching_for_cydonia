@@ -25,7 +25,7 @@ public class SettingsSingleton : MonoBehaviour
 
     [HideInInspector] public float Clock;
     [HideInInspector] public int ViewingIndex;
-    [HideInInspector] public int NextTrackToPlayIndex;
+    [HideInInspector] public int NextSceneToPlay;
 
     private float liveSetTempo;
     public float LiveSetTempo
@@ -210,9 +210,9 @@ public class SettingsSingleton : MonoBehaviour
             this.AttachedEnvironment.transform.position = vector;
     }
 
-    public void StoreTrackIndex(int index)
+    public void StoreSceneIndex(int index)
     {
-        Instance.NextTrackToPlayIndex = index + Instance.ViewingIndex;
+        Instance.NextSceneToPlay = index + Instance.ViewingIndex;
     }
 
     public void SelectInterface(int index)

@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Fixes editor config naming problems.">
-      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/.editorconfig" afterDir="false" />
+    <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Fixes some references.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AudioEqualizer/AudioEqualizer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AudioEqualizer/AudioEqualizer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/CameraController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/FOVCalculator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/FOVCalculator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Camera/GridCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectHider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectHider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +130,7 @@
       <workItem from="1604894508631" duration="1033000" />
       <workItem from="1604895614915" duration="699000" />
       <workItem from="1604896337499" duration="22054000" />
-      <workItem from="1604921940215" duration="1215000" />
+      <workItem from="1604921940215" duration="1831000" />
     </task>
     <task id="LOCAL-00001" summary="Hierarchy refactor.">
       <created>1604808831322</created>
@@ -189,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604923297649</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixes some references.">
+      <created>1604924291058</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604924291058</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +209,7 @@
     <MESSAGE value="Simplifies scripts." />
     <MESSAGE value="Adds .idea file." />
     <MESSAGE value="Fixes editor config naming problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixes editor config naming problems." />
+    <MESSAGE value="Fixes some references." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixes some references." />
   </component>
 </project>
