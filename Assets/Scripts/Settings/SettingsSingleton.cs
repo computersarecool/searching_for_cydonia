@@ -18,14 +18,15 @@ public class SettingsSingleton : MonoBehaviour
     public GameObject Canvas;
     public Text TempoIndicator;
     public GameObject[] Panels;
-    public TrackPositionController[] CycleOf8Indicators;
-    public Image[] FullPositionControllers;
+    public Image[] CycleOf8Indicators;
+    public Image[] PositionIndicators;
     public Text[] FireButtonTexts;
     public GameObject[] ClipBanks;
 
     [HideInInspector] public float Clock;
     [HideInInspector] public int ViewingIndex;
     [HideInInspector] public int NextSceneToPlay;
+    
 
     private float liveSetTempo;
     public float LiveSetTempo
@@ -62,16 +63,20 @@ public class SettingsSingleton : MonoBehaviour
         }
     }
 
-    private readonly float[] playingClipsLength = {1.0f, 1.0f, 1.0f, 1.0f};
     private const int camRotationControlIndex = 2;
     private const int camMovementControlIndex = 6;
     private Image[] uiImages;
     private Text[] uiTexts;
 
+    private readonly int[] playingSlotIndices = new int[8];
+    private readonly float[] playingClipsLength = new float[8];
+    private readonly string[] playingClipsName = new string[8];
+    private readonly float[] playingClipsPosition = new float[8];
+    private readonly string[] playingClipProperties = { "length", "name" };
+
     #region MonoBehaviours
     private void Awake()
     {
-        // Delay to get the network ready
         const int delayForNetwork = 4;
         Invoke(nameof(GetSetState), delayForNetwork);
 
@@ -101,32 +106,73 @@ public class SettingsSingleton : MonoBehaviour
     }
     #endregion
 
+    public void UpdatePlayingSlotIndex(int track, int playingSlotIndex)
+    {
+        this.playingSlotIndices[track] = playingSlotIndex;
+        Debug.Log(track);
+        Debug.Log(playingSlotIndex);
+        foreach (var prop in this.playingClipProperties)
+        {
+            var message = new OSCMessage($"/live_set/{track}/clip_slots/{playingSlotIndex}/clip");
+            message.AddValue(OSCValue.String("get"));
+            message.AddValue(OSCValue.String(prop));
+            this.ExternalOSCTransmitter.Send(message);
+        }
+    }
+
+    public void UpdatePlayingClipsLength(int track, int clip, float length)
+    {
+        if (this.playingSlotIndices[track] == clip)
+        {
+            this.playingClipsLength[track] = length;
+        }
+    }
+
+    public void UpdatePlayingClipsName(int track, int clip, string name)
+    {
+        if (this.playingSlotIndices[track] == clip)
+        {
+            this.playingClipsName[track] = name;
+            this.FireButtonTexts[track].text = name;
+        }
+    }
+
+    public void UpdatePlayingClipsPosition(int track, int clip, float pos)
+    {
+        if (this.playingSlotIndices[track] == clip)
+        {
+            this.playingClipsPosition[track] = pos;
+            this.PositionIndicators[track].fillAmount = pos / this.playingClipsLength[track];
+            this.CycleOf8Indicators[track].fillAmount = (int)pos % 8 / 7.0F;
+        }
+    }
+
     public void UpdateClipName(int clipIndex, string clipName)
     {
         // It is expected that the song name looks like: 12A-126-Haddaway-Thing Called Love
-        const int expectedNameElements = 4;
-        const int bpmIndex = 0;
-        const int keyIndex = 1;
-        const int artistIndex = 2;
-        const int titleIndex = 3;
+        //const int expectedNameElements = 4;
+        //const int bpmIndex = 0;
+        //const int keyIndex = 1;
+        //const int artistIndex = 2;
+        //const int titleIndex = 3;
 
-        var clipNameArray = clipName.Split('-');
-        var buttonIndex = clipIndex - this.ViewingIndex;
-        foreach (var clipBank in this.ClipBanks)
-        {
-            var clipTextObjects = clipBank.transform.GetChild(buttonIndex).gameObject.GetComponentsInChildren<Text>();
+        //var clipNameArray = clipName.Split('-');
+        //var buttonIndex = clipIndex - this.ViewingIndex;
+        //foreach (var clipBank in this.ClipBanks)
+        //{
+        //    var clipTextObjects = clipBank.transform.GetChild(buttonIndex).gameObject.GetComponentsInChildren<Text>();
 
-            if (clipNameArray.Length < expectedNameElements)
-            {
-                clipTextObjects[0].text = clipName;
-            }
-            else
-            {
-                clipTextObjects[0].text = $"{clipNameArray[titleIndex]}";
-                clipTextObjects[1].text = $"{clipNameArray[keyIndex]} {clipNameArray[bpmIndex]}";
-                clipTextObjects[2].text = $"{clipNameArray[artistIndex]}";
-            }
-        }
+        //    if (clipNameArray.Length < expectedNameElements)
+        //    {
+        //        clipTextObjects[0].text = clipName;
+        //    }
+        //    else
+        //    {
+        //        clipTextObjects[0].text = $"{clipNameArray[titleIndex]}";
+        //        clipTextObjects[1].text = $"{clipNameArray[keyIndex]} {clipNameArray[bpmIndex]}";
+        //        clipTextObjects[2].text = $"{clipNameArray[artistIndex]}";
+        //    }
+        //}
     }
 
     public void UpdateClipColor(int clipIndex, int clipColor)
@@ -162,11 +208,11 @@ public class SettingsSingleton : MonoBehaviour
     public void UpdatePlayingClipPosition(int trackNumber, float position)
     {
         // Update full track length percent in the GUI
-        this.FullPositionControllers[trackNumber].fillAmount = position / this.playingClipsLength[trackNumber];
+        this.PositionIndicators[trackNumber].fillAmount = position / this.playingClipsLength[trackNumber];
 
         // Update cycle of 8
         var cycleOf8 = (int) position % 8;
-        this.CycleOf8Indicators[trackNumber].UpdatePos(cycleOf8);
+        //this.CycleOf8Indicators[trackNumber].UpdatePos(cycleOf8);
     }
 
     public void UpdateClipLength(int trackIndex, float length)
