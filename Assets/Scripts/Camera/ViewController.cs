@@ -1,50 +1,23 @@
 ﻿using extOSC;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
-public class ViewController: MonoBehaviour, IPointerDownHandler, IPointerUpHandler
+public class ViewController: MonoBehaviour
 {
-    private bool pressed;
-    private const int moveAmount = 5;
+    private const int moveAmount = 45;
 
-    public void OnPointerDown(PointerEventData eventData)
+    public void Move(bool forward)
     {
-        this.pressed = true;
-    }
+        var vector = forward
+            ? SettingsSingleton.Instance.AttachedEnvironment.transform.position + moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward
+            : SettingsSingleton.Instance.AttachedEnvironment.transform.position - moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward;
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        this.pressed = false;
-    }
-
-    private void Update()
-    {
-        if (this.pressed)
-        {
-            MoveForward();
-        }
-    }
-
-    public void MoveForward()
-    {
-        var vector = SettingsSingleton.Instance.AttachedEnvironment.transform.position + moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward;
-        // TODO: Update from sync
-        SettingsSingleton.Instance.AttachedEnvironment.transform.position = vector;
-        SendOSCUpdate($"{OSCCommunicationRouter.CameraMoveAddress}", vector);
-    }
-
-    public void MoveBackward()
-    {
-        var vector = SettingsSingleton.Instance.AttachedEnvironment.transform.position - moveAmount * Time.deltaTime * SettingsSingleton.Instance.MainCamera.transform.forward;
-        SettingsSingleton.Instance.AttachedEnvironment.transform.position = vector;
-        SendOSCUpdate($"{OSCCommunicationRouter.CameraMoveAddress}", vector);
+        SendOSCUpdate($"{OSCCommunicationRouter.CameraPositionAddress}", vector);
     }
 
     public void RotateView(Vector2 rotationAmount)
     {
-        var vector = new Vector3(rotationAmount.y, -rotationAmount.x, 0);
-        SettingsSingleton.Instance.MainCamera.transform.eulerAngles = vector;
-        SendOSCUpdate($"{OSCCommunicationRouter.CameraRotateAddress}", vector);
+        var vector = new Vector3(-rotationAmount.y, rotationAmount.x, 0);
+        SendOSCUpdate($"{OSCCommunicationRouter.CameraRotationAddress}", vector);
     }
 
     private void SendOSCUpdate(string toAddress, Vector3 vector)
@@ -55,5 +28,4 @@ public class ViewController: MonoBehaviour, IPointerDownHandler, IPointerUpHandl
         message.AddValue(OSCValue.Float(vector.z));
         SettingsSingleton.Instance.UnityOSCTransmitter.Send(message);
     }
-
 }

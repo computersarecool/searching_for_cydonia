@@ -6,16 +6,16 @@ public class OSCCommunicationRouter : MonoBehaviour
     public OSCReceiver Receiver;
 
     // From Unity
-    public const string CameraRotateAddress = "/camera_rotate";
-    public const string CameraMoveAddress = "/camera_move";
-    public const string GuiHueAddress = "/gui_hue";
+    public const string CameraRotationAddress = "/camera_rotate";
+    public const string CameraPositionAddress = "/camera_move";
+    public const string GUIHueAddress = "/gui_hue";
 
     // From others
     private const string timeAddress = "/central/time";
 
     // From Live
-    private const string liveEqBandAddress = "/eq/band/*";
-    private const string liveTempoAddress = "/live_set/tempo";
+    private const string liveEQBandAddress = "/eq/band/*";
+    private const string liveSetAddress = "/live_set";
     private const string liveClipNameAddress = "/live_set/tracks/0/clip_slots/*/clip/name";
     private const string clipColorsAddress = "/live_set/tracks/0/clip_slots/*/clip/color";
     private const string livePlayingClipPositionAddress = "/live_set/tracks/*/playing_clip/playing_position";
@@ -27,16 +27,16 @@ public class OSCCommunicationRouter : MonoBehaviour
     public void Start()
     {
         // From Unity
-        this.Receiver.Bind(CameraRotateAddress, RotateMainCamera);
-        this.Receiver.Bind(CameraMoveAddress, MoveMainCamera);
-        this.Receiver.Bind(GuiHueAddress, UpdateGuiHue);
+        this.Receiver.Bind(CameraRotationAddress, UpdateCameraRotation);
+        this.Receiver.Bind(CameraPositionAddress, UpdateCameraPosition);
+        this.Receiver.Bind(GUIHueAddress, UpdateGUIHue);
 
         // From others
         this.Receiver.Bind(timeAddress, UpdateTime);
 
         // From Live
-        this.Receiver.Bind(liveEqBandAddress, UpdateBand);
-        this.Receiver.Bind(liveTempoAddress, UpdateTempo);
+        this.Receiver.Bind(liveEQBandAddress, UpdateEQBand);
+        this.Receiver.Bind(liveSetAddress, UpdateSet);
         this.Receiver.Bind(liveClipNameAddress, UpdateClipName);
         this.Receiver.Bind(clipColorsAddress, UpdateClipColor);
         this.Receiver.Bind(livePlayingClipPositionAddress, UpdateTrackPosition);
@@ -47,21 +47,21 @@ public class OSCCommunicationRouter : MonoBehaviour
     #endregion
 
     // From Unity
-    private static void RotateMainCamera(OSCMessage message)
+    private static void UpdateCameraRotation(OSCMessage message)
     {
         if (!message.ToVector3(out var vector)) return;
 
         SettingsSingleton.Instance.UpdateCameraRotation(vector);
     }
 
-    private static void MoveMainCamera(OSCMessage message)
+    private static void UpdateCameraPosition(OSCMessage message)
     {
         if (!message.ToVector3(out var vector)) return;
 
         SettingsSingleton.Instance.MoveMainCameraAndEnvironment(vector);
     }
 
-    private static void UpdateGuiHue(OSCMessage message)
+    private static void UpdateGUIHue(OSCMessage message)
     {
         if (!message.ToFloat(out var value)) return;
 
@@ -77,22 +77,27 @@ public class OSCCommunicationRouter : MonoBehaviour
     }
 
     // From Live
-    private static void UpdateBand(OSCMessage message)
+    private static void UpdateEQBand(OSCMessage message)
     {
         if (!message.ToFloat(out var val)) return;
 
-        const int trackAddressIndex = 3;
+        const int bandAddressIndex = 3;
         var addressArray = message.Address.Split('/');
-        var bandIndex = int.Parse(addressArray[trackAddressIndex]);
+        var bandIndex = int.Parse(addressArray[bandAddressIndex]);
 
         SettingsSingleton.Instance.AudioEqualizer.UpdateBand(bandIndex, val);
     }
 
-    private static void UpdateTempo(OSCMessage message)
+    private static void UpdateSet(OSCMessage message)
     {
-        if (!message.ToFloat(out var val)) return;
+        var property = message.Values[0].StringValue;
 
-        SettingsSingleton.Instance.LiveSetTempo = val;
+        switch (property)
+        {
+            case "tempo":
+                SettingsSingleton.Instance.LiveSetTempo = message.Values[1].FloatValue;
+                break;
+        }
     }
 
     private static void UpdateClipName(OSCMessage message)

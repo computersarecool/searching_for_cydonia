@@ -44,10 +44,10 @@ public class SettingsSingleton : MonoBehaviour
         get => this.interfaceIndex;
         set
         {
-            interfaceIndex = value;
-            for (var i = 0; i < Panels.Length; i++)
+            this.interfaceIndex = value;
+            for (var i = 0; i < this.Panels.Length; i++)
             {
-                Panels[i].SetActive(i == interfaceIndex);
+                this.Panels[i].SetActive(i == this.interfaceIndex);
             }
         }
     }
@@ -76,13 +76,13 @@ public class SettingsSingleton : MonoBehaviour
         Invoke(nameof(GetSetState), delayForNetwork);
 
         // Collect GUI objects for hue change
-        uiImages = Canvas.GetComponentsInChildren<Image>(true);
-        uiTexts = Canvas.GetComponentsInChildren<Text>(true);
+        this.uiImages = this.Canvas.GetComponentsInChildren<Image>(true);
+        this.uiTexts = this.Canvas.GetComponentsInChildren<Text>(true);
 
         // Singleton code
         if (Instance != null && Instance != this)
         {
-            Destroy(gameObject);
+            Destroy(this.gameObject);
         }
         else
         {
@@ -94,14 +94,10 @@ public class SettingsSingleton : MonoBehaviour
     #region Ableton Functions
     private void GetSetState()
     {
-        // Get data from live on start
-        var message = new OSCMessage("live_set/get");
+        var message = new OSCMessage("/live_set");
+        message.AddValue(OSCValue.String("get"));
         message.AddValue(OSCValue.String("tempo"));
-        ExternalOSCTransmitter.Send(message);
-
-        message = new OSCMessage("live_set/view/get");
-        message.AddValue(OSCValue.String("selected_scene_index"));
-        ExternalOSCTransmitter.Send(message);
+        this.ExternalOSCTransmitter.Send(message);
     }
     #endregion
 
@@ -151,6 +147,16 @@ public class SettingsSingleton : MonoBehaviour
             buttonColor.normalColor = new Color(colorRf, colorGf, colorBf);
             clipButton.colors = buttonColor;
         }
+    }
+
+    public void ChangeLiveTempo(bool increase)
+    {
+        var newTempo = increase ? this.liveSetTempo + 1 : this.liveSetTempo - 1;
+        var message = new OSCMessage("/live_set");
+        message.AddValue(OSCValue.String("set"));
+        message.AddValue(OSCValue.String("tempo"));
+        message.AddValue(OSCValue.Float(newTempo));
+        this.ExternalOSCTransmitter.Send(message);
     }
 
     public void UpdatePlayingClipPosition(int trackNumber, float position)

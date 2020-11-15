@@ -6,13 +6,6 @@ public class AbletonSpecialController : MonoBehaviour
     private AbletonController liveController;
     private const int sceneIncrementAmount = 8;
     private readonly string[] bankClipPropertiesToGet = { "name", "color" };
-    
-    public void IncrementalTempoChange(bool increase)
-    {
-        var currentTempo = SettingsSingleton.Instance.LiveSetTempo;
-        var nextTempo = increase ? currentTempo + 1 : currentTempo - 1;
-        this.liveController.SetProperty(nextTempo);
-    }
 
     public void ScrollScenes(bool increase)
     {
