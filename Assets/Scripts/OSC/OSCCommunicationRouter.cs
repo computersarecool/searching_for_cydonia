@@ -16,7 +16,7 @@ public class OSCCommunicationRouter : MonoBehaviour
 
     // From Live
     private const string liveEQBandAddress = "/eq/band/*";
-    // TODO: Make more like a router
+    // TODO: Make more like a router with multiple wildcards
     private const string liveSetAddress = "/live_set";
     private const string liveSetTracksAddress = "/live_set/tracks/*";
     private const string liveSetClipAddress= "/live_set/tracks/*/clip_slots/*/clip";
@@ -136,6 +136,7 @@ public class OSCCommunicationRouter : MonoBehaviour
         }
     }
 
+    // TODO: Remove these
     private static void UpdateClipColor(OSCMessage message)
     {
         if (!message.ToInt(out var color)) return;

@@ -107,13 +107,12 @@ public class SettingsSingleton : MonoBehaviour
     #endregion
 
     public void UpdatePlayingSlotIndex(int track, int playingSlotIndex)
-    {
+    {;
         this.playingSlotIndices[track] = playingSlotIndex;
-        Debug.Log(track);
-        Debug.Log(playingSlotIndex);
+
         foreach (var prop in this.playingClipProperties)
         {
-            var message = new OSCMessage($"/live_set/{track}/clip_slots/{playingSlotIndex}/clip");
+            var message = new OSCMessage($"/live_set/tracks/{track}/clip_slots/{playingSlotIndex}/clip");
             message.AddValue(OSCValue.String("get"));
             message.AddValue(OSCValue.String(prop));
             this.ExternalOSCTransmitter.Send(message);
@@ -125,6 +124,7 @@ public class SettingsSingleton : MonoBehaviour
         if (this.playingSlotIndices[track] == clip)
         {
             this.playingClipsLength[track] = length;
+
         }
     }
 
@@ -147,6 +147,7 @@ public class SettingsSingleton : MonoBehaviour
         }
     }
 
+    // TODO: Check usage from here down
     public void UpdateClipName(int clipIndex, string clipName)
     {
         // It is expected that the song name looks like: 12A-126-Haddaway-Thing Called Love
