@@ -1,4 +1,6 @@
 ﻿using extOSC;
+using MusicControl;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -26,7 +28,6 @@ public class SettingsSingleton : MonoBehaviour
     [HideInInspector] public float Clock;
     [HideInInspector] public int ViewingIndex;
     [HideInInspector] public int NextSceneToPlay;
-    
 
     private float liveSetTempo;
     public float LiveSetTempo
@@ -60,6 +61,24 @@ public class SettingsSingleton : MonoBehaviour
         {
             this.MainCamera.GetComponent<GridCamera>().CamIndex = value;
             this.cameraIndex = value;
+        }
+    }
+
+    private List<Track> tracks;
+    [HideInInspector]
+    public List<Track> Tracks
+    {
+        get => this.tracks;
+        set
+        {
+            this.tracks = value;
+            for (var i = 0; i < this.tracks.Count; i++)
+            {
+                var message = new OSCMessage($"/live_set/tracks/{i}");
+                message.AddValue(OSCValue.String("get"));
+                message.AddValue(OSCValue.String("clip_slots"));
+                this.ExternalOSCTransmitter.Send(message);
+            }
         }
     }
 
@@ -103,9 +122,23 @@ public class SettingsSingleton : MonoBehaviour
         message.AddValue(OSCValue.String("get"));
         message.AddValue(OSCValue.String("tempo"));
         this.ExternalOSCTransmitter.Send(message);
+
+        message = new OSCMessage("/live_set");
+        message.AddValue(OSCValue.String("get"));
+        message.AddValue(OSCValue.String("tracks"));
+        this.ExternalOSCTransmitter.Send(message);
     }
     #endregion
 
+    public void ChangeLiveTempo(bool increase)
+    {
+        var newTempo = increase ? this.liveSetTempo + 1 : this.liveSetTempo - 1;
+        var message = new OSCMessage("/live_set");
+        message.AddValue(OSCValue.String("set"));
+        message.AddValue(OSCValue.String("tempo"));
+        message.AddValue(OSCValue.Float(newTempo));
+        this.ExternalOSCTransmitter.Send(message);
+    }
     public void UpdatePlayingSlotIndex(int track, int playingSlotIndex)
     {;
         this.playingSlotIndices[track] = playingSlotIndex;
@@ -124,7 +157,6 @@ public class SettingsSingleton : MonoBehaviour
         if (this.playingSlotIndices[track] == clip)
         {
             this.playingClipsLength[track] = length;
-
         }
     }
 
@@ -147,7 +179,6 @@ public class SettingsSingleton : MonoBehaviour
         }
     }
 
-    // TODO: Check usage from here down
     public void UpdateClipName(int clipIndex, string clipName)
     {
         // It is expected that the song name looks like: 12A-126-Haddaway-Thing Called Love
@@ -175,7 +206,6 @@ public class SettingsSingleton : MonoBehaviour
         //    }
         //}
     }
-
     public void UpdateClipColor(int clipIndex, int clipColor)
     {
         var colorR = (clipColor >> 16) & 255;
@@ -196,36 +226,7 @@ public class SettingsSingleton : MonoBehaviour
         }
     }
 
-    public void ChangeLiveTempo(bool increase)
-    {
-        var newTempo = increase ? this.liveSetTempo + 1 : this.liveSetTempo - 1;
-        var message = new OSCMessage("/live_set");
-        message.AddValue(OSCValue.String("set"));
-        message.AddValue(OSCValue.String("tempo"));
-        message.AddValue(OSCValue.Float(newTempo));
-        this.ExternalOSCTransmitter.Send(message);
-    }
-
-    public void UpdatePlayingClipPosition(int trackNumber, float position)
-    {
-        // Update full track length percent in the GUI
-        this.PositionIndicators[trackNumber].fillAmount = position / this.playingClipsLength[trackNumber];
-
-        // Update cycle of 8
-        var cycleOf8 = (int) position % 8;
-        //this.CycleOf8Indicators[trackNumber].UpdatePos(cycleOf8);
-    }
-
-    public void UpdateClipLength(int trackIndex, float length)
-    {
-        this.playingClipsLength[trackIndex] = length;
-    }
-
-    public void UpdatePlayingClipName(int trackIndex, string clipName)
-    {
-        this.FireButtonTexts[trackIndex].text = clipName;
-    }
-
+    #region game state
     public void UpdateCameraRotation(Vector3 vector)
     {
         if (this.cameraIndex != camRotationControlIndex)
@@ -263,11 +264,6 @@ public class SettingsSingleton : MonoBehaviour
             this.AttachedEnvironment.transform.position = vector;
     }
 
-    public void StoreSceneIndex(int index)
-    {
-        Instance.NextSceneToPlay = index + Instance.ViewingIndex;
-    }
-
     public void SelectInterface(int index)
     {
         Instance.InterfaceIndex = index;
@@ -277,4 +273,5 @@ public class SettingsSingleton : MonoBehaviour
     {
         Instance.CameraIndex = index;
     }
+    #endregion
 }

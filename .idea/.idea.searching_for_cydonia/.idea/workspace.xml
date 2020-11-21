@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Fixes some references.">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +22,12 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/Core/OSCConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCMessage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCTransmitter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/PostProcessing/Runtime/Components/BloomComponent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCValue.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -59,6 +66,8 @@
       <option value="$PROJECT_DIR$/.editorconfig" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicControl.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" />
     </changedPaths>
@@ -72,11 +81,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.1842317" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TODO_SCOPE" value="Local" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.94967175" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,20 +101,20 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RiderTodoViewSettings" groupByProject="false" />
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20420">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20420" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="20420">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="20420" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -131,6 +144,8 @@
       <workItem from="1604895614915" duration="699000" />
       <workItem from="1604896337499" duration="22054000" />
       <workItem from="1604921940215" duration="1831000" />
+      <workItem from="1605841236004" duration="503000" />
+      <workItem from="1605927899374" duration="10759000" />
     </task>
     <task id="LOCAL-00001" summary="Hierarchy refactor.">
       <created>1604808831322</created>
@@ -211,5 +226,55 @@
     <MESSAGE value="Fixes editor config naming problems." />
     <MESSAGE value="Fixes some references." />
     <option name="LAST_COMMIT_MESSAGE" value="Fixes some references." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs</url>
+          <line>163</line>
+          <properties documentPath="C:\Users\willy\Documents\projects\real\searching_for_cydonia\Assets\Scripts\OSC\OSCCommunicationRouter.cs" initialLine="163" containingFunctionPresentation="method 'UpdateClip'">
+            <startOffsets>
+              <option value="5746" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5763" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs</url>
+          <line>176</line>
+          <properties documentPath="C:\Users\willy\Documents\projects\real\searching_for_cydonia\Assets\Scripts\OSC\OSCCommunicationRouter.cs" initialLine="176" containingFunctionPresentation="method 'UpdateClip'">
+            <startOffsets>
+              <option value="6477" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6483" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs</url>
+          <line>103</line>
+          <properties documentPath="C:\Users\willy\Documents\projects\real\searching_for_cydonia\Assets\Scripts\OSC\OSCCommunicationRouter.cs" initialLine="103" containingFunctionPresentation="method 'UpdateSet'">
+            <startOffsets>
+              <option value="3295" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3372" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#MusicControl.Clip..ctor" memberName="this" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

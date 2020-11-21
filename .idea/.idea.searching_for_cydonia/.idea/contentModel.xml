@@ -483,21 +483,22 @@
           <e p="Ableton" t="Include">
             <e p="AbletonController.cs" t="Include" />
             <e p="AbletonSpecialController.cs" t="Include" />
+            <e p="MusicControl.cs" t="Include" />
           </e>
           <e p="AudioEqualizer" t="Include">
             <e p="AudioEqualizer.cs" t="Include" />
           </e>
           <e p="Camera" t="Include">
-            <e p="CameraController.cs" t="Include" />
             <e p="FovCalculator.cs" t="Include" />
             <e p="GridCamera.cs" t="Include" />
+            <e p="ViewController.cs" t="Include" />
           </e>
           <e p="GUI" t="Include">
             <e p="GUIFiller.cs" t="Include" />
             <e p="GUIHueChanger.cs" t="Include" />
             <e p="GUIManager.cs" t="Include" />
+            <e p="InteractionManager.cs" t="Include" />
             <e p="ObjectHider.cs" t="Include" />
-            <e p="TrackPositionController.cs" t="Include" />
           </e>
           <e p="OSC" t="Include">
             <e p="OSCCommunicationRouter.cs" t="Include" />
