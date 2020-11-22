@@ -479,10 +479,11 @@
             <e p="versions.txt" t="Include" />
           </e>
         </e>
+        <e p="ClipPositionMover.cs" t="Include" />
+        <e p="ClipScroller.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Ableton" t="Include">
             <e p="AbletonController.cs" t="Include" />
-            <e p="AbletonSpecialController.cs" t="Include" />
             <e p="MusicControl.cs" t="Include" />
           </e>
           <e p="AudioEqualizer" t="Include">
@@ -493,6 +494,7 @@
             <e p="GridCamera.cs" t="Include" />
             <e p="ViewController.cs" t="Include" />
           </e>
+          <e p="ClipFireButton.cs" t="Include" />
           <e p="GUI" t="Include">
             <e p="GUIFiller.cs" t="Include" />
             <e p="GUIHueChanger.cs" t="Include" />
@@ -506,6 +508,7 @@
           <e p="Settings" t="Include">
             <e p="SettingsSingleton.cs" t="Include" />
           </e>
+          <e p="TrackContainer.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
