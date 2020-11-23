@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Fixes some references.">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Minor update to scene layout">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/CommunicationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/CommunicationManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GUIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +24,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/Core/OSCConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCMessage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCReceiver.cs" root0="SKIP_HIGHLIGHTING" />
@@ -29,11 +34,10 @@
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/Core/OSCBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/PostProcessing/Runtime/Components/BloomComponent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCValue.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ViewRotator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Render Objects/AudioEqualizer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ConfigurationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GuiController.cs" />
@@ -77,12 +81,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CommunicationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/AttachedObjectController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/InteractionManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectFiller.cs" />
+      <option value="$PROJECT_DIR$/Assets/AppPropertySetter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CommunicationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs" />
     </changedPaths>
   </component>
   <component name="NamedScopeManager">
@@ -160,7 +166,7 @@
       <workItem from="1605841236004" duration="503000" />
       <workItem from="1605927899374" duration="11199000" />
       <workItem from="1605998075218" duration="22238000" />
-      <workItem from="1606091473138" duration="7555000" />
+      <workItem from="1606091473138" duration="18586000" />
     </task>
     <task id="LOCAL-00001" summary="Hierarchy refactor.">
       <created>1604808831322</created>
@@ -232,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606098874135</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Minor update to scene layout">
+      <created>1606099568033</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606099568033</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +277,8 @@
     <MESSAGE value="Creates ableton classes." />
     <MESSAGE value="Cleanup" />
     <MESSAGE value="Reorg" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reorg" />
+    <MESSAGE value="Minor update to scene layout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor update to scene layout" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

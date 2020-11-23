@@ -8,13 +8,15 @@ public class CommunicationManager : MonoBehaviour
     // TODO: Make programatically
     public OSCTransmitter primaryTransmitter;
     public OSCTransmitter secondaryTransmitter;
+    public OSCReceiver receiver;
 
     public void Start()
     {
-        this.oscListener = new OSCListener(GetComponent<OSCReceiver>());
+        this.oscListener = new OSCListener(receiver);
     }
 
-    public void CallFunction(string canonicalPath, string function)
+    // TODO: Make variadic function
+    public void CallDAWFunction(string canonicalPath, string function)
     {
         var message = new OSCMessage(canonicalPath);
         message.AddValue(OSCValue.String("call"));
@@ -22,7 +24,7 @@ public class CommunicationManager : MonoBehaviour
         this.primaryTransmitter.Send(message);
     }
 
-    public void CallFunction(string canonicalPath, string function, float parameter)
+    public void CallDAWFunction(string canonicalPath, string function, float parameter)
     {
         var message = new OSCMessage(canonicalPath);
         message.AddValue(OSCValue.String("call"));
@@ -31,7 +33,7 @@ public class CommunicationManager : MonoBehaviour
         this.primaryTransmitter.Send(message);
     }
 
-    public void GetProperty(string canonicalPath, string property)
+    public void GetDAWProperty(string canonicalPath, string property)
     {
         var message = new OSCMessage(canonicalPath);
         message.AddValue(OSCValue.String("get"));
@@ -39,10 +41,18 @@ public class CommunicationManager : MonoBehaviour
         this.primaryTransmitter.Send(message);
     }
 
-    public void SetProperty(string canonicalPath, string property, float value)
+    public void SetDAWProperty(string canonicalPath, string property, float value)
     {
         var message = new OSCMessage(canonicalPath);
         message.AddValue(OSCValue.String("set"));
+        message.AddValue(OSCValue.String(property));
+        message.AddValue(OSCValue.Float(value));
+        this.primaryTransmitter.Send(message);
+    }
+
+    public void SetAppProperty(string canonicalPath, string property, float value)
+    {
+        var message = new OSCMessage(canonicalPath);
         message.AddValue(OSCValue.String(property));
         message.AddValue(OSCValue.Float(value));
         this.primaryTransmitter.Send(message);

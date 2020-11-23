@@ -4,8 +4,13 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - camera
   - Earth Clouds
+  - Configuration Panel
+  - Main Canvas
+  - Tempo Indicator
+  - Cycle Indicator
+  - Clip Position Indicator
+  - Fire Button
   - guiPanels
   layers:
   - Default

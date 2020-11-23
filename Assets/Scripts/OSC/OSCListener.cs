@@ -1,13 +1,17 @@
 ﻿using DAW;
 using extOSC;
 using System.Collections.Generic;
+using UnityEngine;
 
 public class OSCListener
 {
+    // TODO: Separate into parser and listener
+
     // From this app
     public const string CameraRotationAddress = "/camera_rotate";
     public const string CameraPositionAddress = "/camera_move";
-    public const string GUIHueAddress = "/gui_hue";
+    public const string GUIAddress = "/gui";
+    public const string GUIHueProperty = "hue";
 
     // From others
     // TODO: Make come from this app
@@ -20,12 +24,16 @@ public class OSCListener
     private const string liveSetClipSlotsAddress = "/live_set/tracks/*/clip_slots/*";
     private const string liveSetClipAddress = "/live_set/tracks/*/clip_slots/*/clip";
 
+    private GUIManager guiManager;
+
     public OSCListener (OSCReceiver receiver)
     {
+        this.guiManager = (GUIManager)Object.FindObjectOfType(typeof(GUIManager));
+
         // From this app
         receiver.Bind(CameraRotationAddress, UpdateCameraRotation);
         receiver.Bind(CameraPositionAddress, UpdateCameraPosition);
-        receiver.Bind(GUIHueAddress, UpdateGUIHue);
+        receiver.Bind(GUIAddress, UpdateGUI);
 
         // From others
         receiver.Bind(timeAddress, UpdateTime);
@@ -48,6 +56,19 @@ public class OSCListener
 
     #region From This App
 
+    private void UpdateGUI(OSCMessage message)
+    {
+        var property = message.Values[0].StringValue;
+        var value = message.Values[1].FloatValue;
+
+        switch (property)
+        {
+            case GUIHueProperty:
+                guiManager.Hue = value;
+                break;
+        }
+    }
+
     // TODO: Set properties directly
     private static void UpdateCameraRotation(OSCMessage message)
     {
@@ -63,12 +84,6 @@ public class OSCListener
         //SettingsSingleton.Instance.MoveMainCameraAndEnvironment(vector);
     }
 
-    public void UpdateGUIHue(OSCMessage message)
-    {
-        if (!message.ToFloat(out var value)) return;
-
-        //SettingsSingleton.Instance.UpdateGUIHue(value);
-    }
     #endregion
 
     #region From Others
