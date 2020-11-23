@@ -33,6 +33,6 @@ public class ClipFireButton : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        AbletonController.CallFunction(this.CanonicalPath, "fire");
+        //AbletonController.CallFunction(this.CanonicalPath, "fire");
     }
 }

@@ -17,10 +17,10 @@ public class TrackContainer : MonoBehaviour
         {
             this.clipIndexOffset = Math.Max(0, this.clipIndexOffset - maxButtons);
         }
-        else if (this.clipIndexOffset + maxButtons > SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots.Count)
-        {
-            return;
-        }
+        // else if (this.clipIndexOffset + maxButtons > SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots.Count)
+        // {
+        //     return;
+        // }
         else
         {
             this.clipIndexOffset += maxButtons;
@@ -43,16 +43,16 @@ public class TrackContainer : MonoBehaviour
             Destroy(button.gameObject);
         }
 
-        if (SettingsSingleton.Instance == null)
-        {
-            return;
-        }
+        // if (SettingsSingleton.Instance == null)
+        // {
+        //     return;
+        // }
 
         // Create new buttons
         var buttonList = new List<GameObject>();
         for (var i = clipIndexOffset; i < clipIndexOffset + maxButtons; i++)
         {
-            if (i >= SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots.Count) break;
+            //if (i >= SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots.Count) break;
 
             buttonList.Add(Instantiate(ClipFireButton, this.ClipButtonLayout.transform));
         }
@@ -63,8 +63,8 @@ public class TrackContainer : MonoBehaviour
             var clipFireButtonComp = buttonList[i].GetComponentInChildren<ClipFireButton>();
             var trueIndex = this.clipIndexOffset + i;
             clipFireButtonComp.CanonicalPath = $"/live_set/tracks/{this.TrackIndex}/clip_slots/{trueIndex}/clip";
-            clipFireButtonComp.Name = SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots[trueIndex].Clip.Name;
-            clipFireButtonComp.Color = SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots[trueIndex].Clip.Color;
+            //clipFireButtonComp.Name = SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots[trueIndex].Clip.Name;
+            //clipFireButtonComp.Color = SettingsSingleton.Instance.LiveSet.tracks[this.TrackIndex].ClipSlots[trueIndex].Clip.Color;
         }
     }
 }

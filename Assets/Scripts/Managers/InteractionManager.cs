@@ -5,11 +5,11 @@ public class InteractionManager : MonoBehaviour, IPointerDownHandler, IPointerUp
 {
     public bool MoveForward;
     private bool pressed;
-    private ViewController viewController;
+    //private AttachedObjectController attachedObjectController;
 
     private void Start()
     {
-        this.viewController = FindObjectOfType<ViewController>();
+        //this.attachedObjectController = FindObjectOfType<AttachedObjectController>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -26,7 +26,7 @@ public class InteractionManager : MonoBehaviour, IPointerDownHandler, IPointerUp
     {
         if (this.pressed)
         {
-            this.viewController.Move(this.MoveForward);
+            //this.attachedObjectController.Move(this.MoveForward);
         }
     }
 }

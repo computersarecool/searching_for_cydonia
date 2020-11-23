@@ -444,7 +444,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -519,7 +519,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20882523}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1320.4835, y: -1062.8026, z: -28.004333}
+  m_LocalPosition: {x: -2303.9512, y: -1768.7867, z: -67.90192}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1293972075}
@@ -532,8 +532,8 @@ Transform:
   - {fileID: 227306308}
   - {fileID: 928900703}
   - {fileID: 1264987203}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1883124409}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &20882525
 MonoBehaviour:
@@ -830,7 +830,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -2314,7 +2314,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -2638,7 +2638,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -3854,6 +3854,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165598858}
   m_CullTransparentMesh: 0
+--- !u!1 &166187234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 166187235}
+  - component: {fileID: 166187236}
+  m_Layer: 0
+  m_Name: GUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &166187235
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166187234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 837279319}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &166187236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166187234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a4dd2cb4d18bf740b159f6b526c6b00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConfigurationPanel: {fileID: 0}
+  MainPanelsContainer: {fileID: 0}
+  Canvas: {fileID: 0}
+  Panels: []
+  TempoIndicator: {fileID: 0}
+  CycleOf8Indicators: []
+  PositionIndicators: []
+  FireButtonTexts: []
 --- !u!1 &168091839
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,7 +4230,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -4809,6 +4860,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 206824406}
+  - component: {fileID: 206824408}
   m_Layer: 0
   m_Name: DAW
   m_TagString: Untagged
@@ -4828,8 +4880,20 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837279319}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &206824408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 206824405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6ac67ab96ecf834fb4aa713e3676dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &212100529
 GameObject:
   m_ObjectHideFlags: 0
@@ -5979,7 +6043,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -6399,7 +6463,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -7080,7 +7144,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -7485,7 +7549,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -7803,7 +7867,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -8149,7 +8213,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -9503,7 +9567,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -9635,7 +9699,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -10757,7 +10821,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -11063,7 +11127,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -11275,7 +11339,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -12334,7 +12398,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -15269,7 +15333,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: ChangeLiveTempo
         m_Mode: 6
@@ -15740,7 +15804,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -16180,7 +16244,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -16411,9 +16475,9 @@ Transform:
   m_LocalPosition: {x: 965.77686, y: 858.9564, z: 10.471802}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1275522873}
   - {fileID: 206824406}
   - {fileID: 846870705}
+  - {fileID: 166187235}
   - {fileID: 1071436807}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -16427,6 +16491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 846870705}
+  - component: {fileID: 846870706}
   m_Layer: 0
   m_Name: Game
   m_TagString: Untagged
@@ -16446,8 +16511,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 837279319}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &846870706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846870704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35ca92347c1ee83408a2074e1e642293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Clock: 0
+  AttachedEnvironment: {fileID: 2929486344006346889}
 --- !u!1 &849167481
 GameObject:
   m_ObjectHideFlags: 0
@@ -17927,7 +18006,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -19005,7 +19084,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -19530,7 +19609,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -19816,7 +19895,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -19959,9 +20038,8 @@ GameObject:
   - component: {fileID: 1004423696}
   - component: {fileID: 1004423702}
   - component: {fileID: 1004423701}
-  - component: {fileID: 1004423700}
   m_Layer: 5
-  m_Name: GUI Manager Canvas
+  m_Name: Main Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20040,28 +20118,14 @@ RectTransform:
   m_Children:
   - {fileID: 532049350}
   - {fileID: 296293788}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1883124409}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1004423700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004423695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a4dd2cb4d18bf740b159f6b526c6b00, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ConfigurationPanel: {fileID: 296293787}
-  MainPanelsContainer: {fileID: 532049349}
 --- !u!114 &1004423701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21104,7 +21168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071436807}
-  - component: {fileID: 1071436808}
+  - component: {fileID: 1071436809}
   m_Layer: 0
   m_Name: Communication
   m_TagString: Untagged
@@ -21129,7 +21193,7 @@ Transform:
   m_Father: {fileID: 837279319}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1071436808
+--- !u!114 &1071436809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -21138,10 +21202,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071436806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e58ef6a7e62cb42488a5c8308e9f01d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b9c62b1bcedd1d46947731804d6f614, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Receiver: {fileID: 407097072}
+  primaryTransmitter: {fileID: 544978718}
+  secondaryTransmitter: {fileID: 1500396084}
 --- !u!1 &1075632947
 GameObject:
   m_ObjectHideFlags: 0
@@ -22018,7 +22083,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -22488,7 +22553,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -24138,7 +24203,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -25355,7 +25420,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -25874,7 +25939,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -26247,111 +26312,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1270969057}
   m_CullTransparentMesh: 0
---- !u!1 &1275522871
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1275522873}
-  - component: {fileID: 1275522872}
-  - component: {fileID: 1275522874}
-  - component: {fileID: 1275522875}
-  m_Layer: 0
-  m_Name: Settings Singleton
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1275522872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275522871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4241e6e07115bc4468a8572692e1a359, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MainCamera: {fileID: 1863028599467149815}
-  AudioEqualizer: {fileID: 20882525}
-  AttachedEnvironment: {fileID: 2929486344006346889}
-  ExternalOSCTransmitter: {fileID: 1500396084}
-  UnityOSCTransmitter: {fileID: 544978718}
-  Canvas: {fileID: 1004423695}
-  Panels:
-  - {fileID: 1428197850}
-  - {fileID: 1520792036}
-  - {fileID: 1663817343}
-  - {fileID: 2061259791}
-  - {fileID: 81857096}
-  - {fileID: 581935889}
-  - {fileID: 972249511}
-  - {fileID: 1888080825}
-  - {fileID: 641525762}
-  - {fileID: 1703174869}
-  - {fileID: 1350563}
-  - {fileID: 893315816}
-  TempoIndicator: {fileID: 707936773}
-  CycleOf8Indicators:
-  - {fileID: 691842492}
-  - {fileID: 731495428}
-  - {fileID: 0}
-  - {fileID: 0}
-  PositionIndicators:
-  - {fileID: 1108965986}
-  - {fileID: 0}
-  FireButtonTexts:
-  - {fileID: 850029914}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  Clock: 0
---- !u!4 &1275522873
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275522871}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -965.77686, y: -858.9564, z: -10.471802}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 837279319}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1275522874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275522871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba0431ed976e0624d91993e1d029696d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CanonicalPath: 
-  PropertyOrFunction: 
---- !u!114 &1275522875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1275522871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b57ad497875d7f342a57e59f3e4b1131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1288429135
 GameObject:
   m_ObjectHideFlags: 0
@@ -26434,7 +26394,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -27349,7 +27309,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -28882,7 +28842,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: ChangeLiveTempo
         m_Mode: 6
@@ -29285,7 +29245,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -30539,7 +30499,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -31858,7 +31818,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -32300,7 +32260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -32913,7 +32873,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -33387,7 +33347,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: StoreTrackIndex
         m_Mode: 3
@@ -33580,15 +33540,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638822485}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -983.4678, y: -705.98413, z: -39.897583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 170076735}
   - {fileID: 1905341858}
   - {fileID: 4592108904629545958}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 1883124409}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648871957
 GameObject:
@@ -34796,7 +34756,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectCamera
         m_Mode: 3
@@ -36094,7 +36054,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -36640,7 +36600,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -36952,7 +36912,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -37159,7 +37119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -38054,6 +38014,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveForward: 1
+--- !u!1 &1883124408
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1883124409}
+  m_Layer: 0
+  m_Name: Assets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1883124409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883124408}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 983.4678, y: 705.98413, z: 39.897583}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1004423699}
+  - {fileID: 1638822486}
+  - {fileID: 20882524}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1885982416 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 444136, guid: ece113bb09a725547ad15c6e1794fbe0,
@@ -39473,7 +39466,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -40485,7 +40478,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004423700}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: TogglePanels
         m_Mode: 6
@@ -41536,7 +41529,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SettingsSingleton, Assembly-CSharp
         m_MethodName: SelectInterface
         m_Mode: 3
@@ -41828,7 +41821,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1275522875}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GUIHueChanger, Assembly-CSharp
         m_MethodName: ChangeHue
         m_Mode: 0

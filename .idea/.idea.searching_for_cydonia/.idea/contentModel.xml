@@ -479,12 +479,12 @@
             <e p="versions.txt" t="Include" />
           </e>
         </e>
-        <e p="ClipPositionMover.cs" t="Include" />
-        <e p="ClipScroller.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="Ableton" t="Include">
-            <e p="AbletonController.cs" t="Include" />
-            <e p="MusicControl.cs" t="Include" />
+            <e p="ClipFireButton.cs" t="Include" />
+            <e p="ClipPositionMover.cs" t="Include" />
+            <e p="ClipScroller.cs" t="Include" />
+            <e p="DAWModel.cs" t="Include" />
           </e>
           <e p="AudioEqualizer" t="Include">
             <e p="AudioEqualizer.cs" t="Include" />
@@ -492,23 +492,22 @@
           <e p="Camera" t="Include">
             <e p="FovCalculator.cs" t="Include" />
             <e p="GridCamera.cs" t="Include" />
-            <e p="ViewController.cs" t="Include" />
           </e>
-          <e p="ClipFireButton.cs" t="Include" />
           <e p="GUI" t="Include">
             <e p="GUIFiller.cs" t="Include" />
-            <e p="GUIHueChanger.cs" t="Include" />
+            <e p="ObjectHider.cs" t="Include" />
+            <e p="TrackContainer.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="CommunicationManager.cs" t="Include" />
+            <e p="DAWManager.cs" t="Include" />
+            <e p="GameManager.cs" t="Include" />
             <e p="GUIManager.cs" t="Include" />
             <e p="InteractionManager.cs" t="Include" />
-            <e p="ObjectHider.cs" t="Include" />
           </e>
           <e p="OSC" t="Include">
-            <e p="OSCCommunicationRouter.cs" t="Include" />
+            <e p="OSCListener.cs" t="Include" />
           </e>
-          <e p="Settings" t="Include">
-            <e p="SettingsSingleton.cs" t="Include" />
-          </e>
-          <e p="TrackContainer.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

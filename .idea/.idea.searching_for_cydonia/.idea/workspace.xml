@@ -4,14 +4,35 @@
     <list default="true" id="777c2d1b-a96c-4ca1-a53d-6bc6b6a1b6e3" name="Default Changelist" comment="Fixes some references.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.searching_for_cydonia/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClipPositionMover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClipPositionMover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClipScroller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ClipScroller.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonSpecialController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicControl.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicControl.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicControl.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/ViewController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Camera/ViewController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClipFireButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ClipFireButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectFiller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectFiller.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/InteractionManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GUI/InteractionManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrackContainer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TrackContainer.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,25 +51,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/Core/OSCConverter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCMessage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2020.1.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ClipScroller.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/7a/72d9e60e/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCReceiver.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCTransmitter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A9810827-DCE3-444A-8E5C-4E9F3F5E0828/7a/72d9e60e/Debug.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/Core/OSCBase.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/PostProcessing/Runtime/Components/BloomComponent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCValue.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Examples/13) Marshalling/Scripts/MarshallingExample.cs" />
-      <option value="$PROJECT_DIR$/Assets/AssetStoreDownloads/extOSC/Scripts/OSCTransmitter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/Constants.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/PickCamera.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ConfigurationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Render Objects/AudioEqualizerController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/CommunicationController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCMessageRouter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ChangeGuiHue.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ViewRotator.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Render Objects/AudioEqualizer.cs" />
@@ -59,7 +71,6 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/CameraSelector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/CameraMover.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Gameplay/ViewMover.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIFiller.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/InterfaceSelector.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Camera/CameraSelector.cs" />
@@ -75,17 +86,32 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/GUI/TrackPositionController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/DAWManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
       <option value="$PROJECT_DIR$/Assets/ClipFireButton.cs" />
       <option value="$PROJECT_DIR$/Assets/TrackContainer.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ClipFireButton.cs" />
-      <option value="$PROJECT_DIR$/Assets/ClipPositionMover.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TrackContainer.cs" />
       <option value="$PROJECT_DIR$/Assets/ClipScroller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/GamePlayerManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/MusicControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Settings/SettingsSingleton.cs" />
+      <option value="$PROJECT_DIR$/Assets/AssetStoreDownloads/EarthSimplePlanets/Scripts/CloudRotation.cs" />
+      <option value="$PROJECT_DIR$/Assets/ClipPositionMover.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TrackContainer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/ViewController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCCommunicationRouter.cs" />
+      <option value="$PROJECT_DIR$/Assets/GamePlayManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/AbletonController.cs" />
+      <option value="$PROJECT_DIR$/Assets/CommunicationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ClipFireButton.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Ableton/DAWControl.cs" />
+      <option value="$PROJECT_DIR$/Assets/DAWManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIHueChanger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/GUIManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/OSC/OSCListener.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/CommunicationManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Camera/AttachedObjectController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/InteractionManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/GUI/ObjectFiller.cs" />
     </changedPaths>
   </component>
   <component name="NamedScopeManager">
@@ -118,10 +144,10 @@
   </component>
   <component name="RiderTodoViewSettings" groupByProject="false" />
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12652">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12652" />
+      <option name="pid" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -162,7 +188,8 @@
       <workItem from="1604921940215" duration="1831000" />
       <workItem from="1605841236004" duration="503000" />
       <workItem from="1605927899374" duration="11199000" />
-      <workItem from="1605998075218" duration="22114000" />
+      <workItem from="1605998075218" duration="22238000" />
+      <workItem from="1606091473138" duration="6855000" />
     </task>
     <task id="LOCAL-00001" summary="Hierarchy refactor.">
       <created>1604808831322</created>
@@ -220,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605960411186</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Cleanup">
+      <created>1606049248195</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606049248196</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +284,8 @@
     <MESSAGE value="Fixes editor config naming problems." />
     <MESSAGE value="Fixes some references." />
     <MESSAGE value="Creates ableton classes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Creates ableton classes." />
+    <MESSAGE value="Cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleanup" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

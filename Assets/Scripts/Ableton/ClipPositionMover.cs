@@ -13,8 +13,8 @@ public class ClipPositionMover : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        var clipIndex = SettingsSingleton.Instance.LiveSet.tracks[this.trackIndex].PlayingSlotIndex;
-        var canonicalPath = $"/live_set/tracks/{this.trackIndex}/clip_slots/{clipIndex}/clip";
-        AbletonController.CallFunction(canonicalPath, "move_playing_pos", this.beatsToMove);
+        //var clipIndex = SettingsSingleton.Instance.LiveSet.tracks[this.trackIndex].PlayingSlotIndex;
+        //var canonicalPath = $"/live_set/tracks/{this.trackIndex}/clip_slots/{clipIndex}/clip";
+        //AbletonController.CallFunction(canonicalPath, "move_playing_pos", this.beatsToMove);
     }
 }

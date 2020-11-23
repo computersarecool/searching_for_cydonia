@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MusicControl
+namespace DAW
 {
     public class Set
     {
@@ -14,7 +14,7 @@ namespace MusicControl
             set
             {
                 this.tempo = value;
-                SettingsSingleton.Instance.TempoIndicator.text = value.ToString("F0");
+                //SettingsSingleton.Instance.TempoIndicator.text = value.ToString("F0");
             }
         }
 
@@ -26,7 +26,7 @@ namespace MusicControl
             message.AddValue(OSCValue.String("set"));
             message.AddValue(OSCValue.String("tempo"));
             message.AddValue(OSCValue.Float(newTempo));
-            SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
+            //SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
         }
         public Set()
         {
@@ -38,7 +38,7 @@ namespace MusicControl
             var propsToGet = new[] {"tempo", "tracks"};
             foreach (var prop in propsToGet)
             {
-                AbletonController.GetProperty("/live_set", prop);
+                //AbletonController.GetProperty("/live_set", prop);
             }
         }
     }
@@ -57,7 +57,7 @@ namespace MusicControl
             set
             {
                 this.playingSlotIndex = value;
-                SettingsSingleton.Instance.FireButtonTexts[this.trackIndex].text = this.clipSlots[value].Clip.Name;
+                //SettingsSingleton.Instance.FireButtonTexts[this.trackIndex].text = this.clipSlots[value].Clip.Name;
             }
         }
 
@@ -82,7 +82,7 @@ namespace MusicControl
             var message = new OSCMessage(this.canonicalPath);
             message.AddValue(OSCValue.String("get"));
             message.AddValue(OSCValue.String("clip_slots"));
-            SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
+            //SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
         }
     }
 
@@ -99,7 +99,7 @@ namespace MusicControl
             var message = new OSCMessage(this.canonicalPath);
             message.AddValue(OSCValue.String("get"));
             message.AddValue(OSCValue.String("clip"));
-            SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
+            //SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
         }
 
         public ClipSlot(string id, string canonicalPath, int trackIndex)
@@ -142,8 +142,8 @@ namespace MusicControl
             set
             {
                 this.playingPosition = value;
-                SettingsSingleton.Instance.PositionIndicators[this.trackIndex].fillAmount = value / this.Length;
-                SettingsSingleton.Instance.CycleOf8Indicators[this.trackIndex].fillAmount = (int)value % 8 / 7.0F;
+                //SettingsSingleton.Instance.PositionIndicators[this.trackIndex].fillAmount = value / this.Length;
+                //SettingsSingleton.Instance.CycleOf8Indicators[this.trackIndex].fillAmount = (int)value % 8 / 7.0F;
             }
         }
 
@@ -160,7 +160,7 @@ namespace MusicControl
                 var message = new OSCMessage(this.canonicalPath);
                 message.AddValue(OSCValue.String("get"));
                 message.AddValue(OSCValue.String(prop));
-                SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
+                //SettingsSingleton.Instance.ExternalOSCTransmitter.Send(message);
             }
         }
     }
