@@ -3881,7 +3881,9 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 532049350}
+  - {fileID: 296293788}
   m_Father: {fileID: 837279319}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6209,20 +6211,20 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296293787}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10.471802}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 1522739665}
   - {fileID: 436734771}
   - {fileID: 649263161}
   - {fileID: 1581701610}
-  m_Father: {fileID: 1004423699}
+  m_Father: {fileID: 166187235}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00036621094, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1594.2234, y: 741.0436}
+  m_SizeDelta: {x: 3657.1428, y: 2285.7144}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &296293789
 MonoBehaviour:
@@ -9913,7 +9915,7 @@ GameObject:
   m_Component:
   - component: {fileID: 532049350}
   m_Layer: 5
-  m_Name: Main Panels Container
+  m_Name: Main Panels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9926,9 +9928,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532049349}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10.471802}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 1428197851}
   - {fileID: 1520792037}
@@ -9942,13 +9944,13 @@ RectTransform:
   - {fileID: 1703174870}
   - {fileID: 1350564}
   - {fileID: 893315817}
-  m_Father: {fileID: 1004423699}
+  m_Father: {fileID: 166187235}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 314.22314, y: -58.95642}
+  m_SizeDelta: {x: 3657.1428, y: 2285.7144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &532431526
 GameObject:
@@ -16526,7 +16528,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Clock: 0
-  AttachedEnvironment: {fileID: 2929486344006346889}
 --- !u!1 &849167481
 GameObject:
   m_ObjectHideFlags: 0
@@ -20115,9 +20116,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 532049350}
-  - {fileID: 296293788}
+  m_Children: []
   m_Father: {fileID: 1883124409}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -39041,7 +39040,7 @@ MonoBehaviour:
   _onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2929486344006346890}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ViewController, Assembly-CSharp
         m_MethodName: RotateView
         m_Mode: 0
@@ -42429,7 +42428,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4592108904629545958}
-  - component: {fileID: 2929486344006346890}
   m_Layer: 0
   m_Name: Attached Objects Container
   m_TagString: Untagged
@@ -42437,18 +42435,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2929486344006346890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2929486344006346889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 771e057af51e7c04cb989b8849210e88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &4592108904629545958
 Transform:
   m_ObjectHideFlags: 0

@@ -494,7 +494,7 @@
             <e p="GridCamera.cs" t="Include" />
           </e>
           <e p="GUI" t="Include">
-            <e p="GUIFiller.cs" t="Include" />
+            <e p="ObjectFiller.cs" t="Include" />
             <e p="ObjectHider.cs" t="Include" />
             <e p="TrackContainer.cs" t="Include" />
           </e>
